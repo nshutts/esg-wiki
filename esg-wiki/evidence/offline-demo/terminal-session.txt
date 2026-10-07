@@ -1,0 +1,378 @@
+[1m[7m%[27m[1m[0m                                                                                                                        ]7;file://Natalies-MacBook-Air-M1.local/Users/natalieshutts/esg-wiki[0m[27m[24m[Jnatalieshutts@Natalies-MacBook-Air-M1 esg-wiki % [K[?2004h[7mwiki status --save[27m
+[7mwiki --help[27m[K
+[7mwiki ingest vault/raw/Novata_news.pdf --force[27m[K
+[7mwiki test[27m[K
+[7mwiki modecheck[27m[K
+[7mwiki search "supply chain human rights" --save[27m[K
+[7mwiki chat[27m[K[6A[40C[27mw[27mi[27mk[27mi[27m [27ms[27mt[27ma[27mt[27mu[27ms[27m [27m-[27m-[27ms[27ma[27mv[27me[1B[27mw[27mi[27mk[27mi[27m [27m-[27m-[27mh[27me[27ml[27mp[1B[27mw[27mi[27mk[27mi[27m [27mi[27mn[27mg[27me[27ms[27mt[27m [27mv[27ma[27mu[27ml[27mt[27m/[27mr[27ma[27mw[27m/[27mN[27mo[27mv[27ma[27mt[27ma[27m_[27mn[27me[27mw[27ms[27m.[27mp[27md[27mf[27m [27m-[27m-[27mf[27mo[27mr[27mc[27me[1B[27mw[27mi[27mk[27mi[27m [27mt[27me[27ms[27mt[1B[27mw[27mi[27mk[27mi[27m [27mm[27mo[27md[27me[27mc[27mh[27me[27mc[27mk[1B[27mw[27mi[27mk[27mi[27m [27ms[27me[27ma[27mr[27mc[27mh[27m [27m"[27ms[27mu[27mp[27mp[27ml[27my[27m [27mc[27mh[27ma[27mi[27mn[27m [27mh[27mu[27mm[27ma[27mn[27m [27mr[27mi[27mg[27mh[27mt[27ms[27m"[27m [27m-[27m-[27ms[27ma[27mv[27me[1B[27mw[27mi[27mk[27mi[27m [27mc[27mh[27ma[27mt[?2004l
+[1mDevice[0m
+  os: macOS 26.5.2
+  machine: arm64
+  python: 3.9.6
+  chip: Apple M1
+  total_memory_gb: 8.0
+  memory_type: unified (CPU and GPU share it)
+  available_memory_gb_approx: 2.1
+  free_disk_gb: 12.7
+[1mNetwork[0m
+  internet: [32moffline[0m
+[1mRuntime[0m
+  Ollama 0.35.0 at http://127.0.0.1:11434 [32m[ok][0m
+[1mModels[0m
+  gemma4:e2b-it-qat: 4.6B Q4_0 4.34 GB digest 07ea59a47401
+  embeddinggemma: 307.58M BF16 0.62 GB digest 85462619ee72
+[1mIndex[0m
+  91 passages, embeddings: True, built 2026-09-29 22:41:09
+saved: evidence/status/2026-09-29_224839-status.md
+usage: wiki [-h] <command> ...
+
+Personal ESG wiki: a local Gemma model + your own sources, fully offline.
+
+Commands
+  ingest    read sources in vault/raw/, write linked wiki notes, rebuild the index
+  search    show original passages that match (no model answer)
+  ask       standalone factual answer with citations, or "insufficient evidence"
+  chat      talk with Ledger, the assistant; it looks up notes only when needed
+  test      run the four ask-mode test questions and save evidence cards
+  modecheck run the chat/search/ask boundary checks and save a transcript
+  status    device specs, network state, Ollama and model check
+
+Configuration: config/settings.yaml (models, retrieval, context sizes),
+config/sources.yaml (source catalog), config/topics.yaml (wiki topic map),
+persona.md (chat voice), wiki-instructions.md (ask rules),
+ingest-instructions.md (note-writing rules).
+Required: Ollama running locally with the models in settings.yaml pulled.
+
+positional arguments:
+  <command>
+    ingest    build wiki notes and the index from vault/raw/
+    search    show matching original passages (no model answer)
+    ask       cited answer from your sources
+    chat      talk with the assistant
+    test      run the ask-mode test set in tests/questions.yaml
+    modecheck
+              run the chat/search/ask boundary checks
+    status    device, network, runtime and model check
+    help      show this help
+
+optional arguments:
+  -h, --help  show this help message and exit
+
+Examples
+  wiki status
+  wiki ingest                         # all of vault/raw/
+  wiki ingest vault/raw/Novata_news.pdf --force
+  wiki search "double materiality"
+  wiki ask "What revenue threshold puts a company in scope of California SB 253?"
+  wiki chat
+  wiki test
+  wiki modecheck
+[1mIngest · local model gemma4:e2b-it-qat · network: offline[0m
+[2mtarget: vault/raw/Novata_news.pdf (1 file(s))[0m
+[2m  extracted   9 passages from ESG_Frameworks.docx[0m
+[2m  extracted  14 passages from Novata_news.pdf[0m
+[2m  extracted  13 passages from Global_Sustainability_Reporting_Standards_Executive_Briefing.pdf[0m
+[1m
+Writing wiki notes (26 candidates)[0m
+[2m  [ 2/26] Sources/Novata ESG Standards and Frameworks Guide: reviewed, kept[0m
+[2m  [ 4/26] Frameworks and Standards/ISSB Standards: reviewed, kept[0m
+[2m  [ 5/26] Frameworks and Standards/GRI Standards: reviewed, kept[0m
+[2m  [ 6/26] Frameworks and Standards/SASB Standards: reviewed, kept[0m
+[2m  [ 7/26] Frameworks and Standards/TCFD: reviewed, kept[0m
+[2m  [ 8/26] Frameworks and Standards/CDP: reviewed, kept[0m
+[2m  [11/26] Frameworks and Standards/UN Sustainable Development Goals: reviewed, kept[0m
+[2m  [12/26] Frameworks and Standards/Private Markets ESG Frameworks: reviewed, kept[0m
+[2m  [18/26] Europe/Omnibus I Directive: reviewed, kept[0m
+[2m  [19/26] Europe/VSME Standard: reviewed, kept[0m
+[2m  [24/26] Concepts/Double Materiality: reviewed, kept[0m
+[2m  [25/26] Concepts/Standards vs Frameworks: reviewed, kept[0m
+[2m  [26/26] Concepts/Scope 1 2 and 3 Emissions: reviewed, kept[0m
+[1m
+Retrieval index[0m[2m: 36 source passages + 55 note sections, embeddings: embeddinggemma (0 new, 91 reused)[0m
+[2mtotal 0.4s · saved: evidence/ingest/2026-09-29_224839-ingest.md[0m
+[1m
+=== Test 1: SB 253 revenue threshold (direct question answered by one source) ===[0m
+Q: What revenue threshold puts a company in scope of California SB 253?
+
+[2mmode: ask | execution: local (Ollama) | model: gemma4:e2b-it-qat | network: offline[0m
+[2mretrieved 5 passages in 1.37s (hybrid search):[0m
+[2m  [1] vault/raw/Global_Sustainability_Reporting_Standards_Executive_Briefing.pdf  pp.3-4, "8. California SB 253 and SB 261"[0m
+[2m  [2] vault/raw/Global_Sustainability_Reporting_Standards_Executive_Briefing.pdf  pp.1-2, "3. GHG Protocol"[0m
+[2m  [3] vault/raw/Global_Sustainability_Reporting_Standards_Executive_Briefing.pdf  p.3, "7. Corporate Sustainability Due Diligence Directive (CSDDD)"[0m
+[2m  [4] vault/raw/Global_Sustainability_Reporting_Standards_Executive_Briefing.pdf  p.4, "9. Australian Sustainability Reporting Standards (AASB S2)"[0m
+[2m  [5] vault/raw/Global_Sustainability_Reporting_Standards_Executive_Briefing.pdf  p.2, "4. Corporate Sustainability Reporting Directive (CSRD) and ESRS"[0m
+
+what can you help me with?US-organized entities doing business in California with total annual revenue above $1bn are in scope for SB 253 [1].
+
+[1mSources[0m
+  [1] Global Sustainability Reporting Briefing, pp.3-4, "8. California SB 253 and SB 261"  [2mvault/raw/Global_Sustainability_Reporting_Standards_Executive_Briefing.pdf[0m
+[32mCitation check: cited (every factual sentence cites a retrieved passage)[0m
+[2mtime: retrieval 1.37s, model 16.14s (29 tokens, 32.0 tok/s, prompt 1612 tokens)[0m
+
+[32mretrieval: expected passage(s) found {'reporting-briefing:s11c1': 1}[0m | [32manswer: meets automatic check[0m
+[2msaved: evidence/ask-tests/Test 1 - SB 253 revenue threshold.md[0m
+[1m
+=== Test 2: CSDDD start date (reworded) (answerable question phrased differently from the source) ===[0m
+Q: When do the largest European companies have to start checking their supply chains for human rights and environmental harm?
+
+[2mmode: ask | execution: local (Ollama) | model: gemma4:e2b-it-qat | network: offline[0m
+[2mretrieved 5 passages in 1.91s (hybrid search):[0m
+[2m  [1] vault/raw/Global_Sustainability_Reporting_Standards_Executive_Briefing.pdf  p.3, "7. Corporate Sustainability Due Diligence Directive (CSDDD)"[0m
+[2m  [2] vault/raw/ESG_Frameworks.docx  "Table row: CSRD"[0m
+[2m  [3] vault/raw/Global_Sustainability_Reporting_Standards_Executive_Briefing.pdf  p.2, "4. Corporate Sustainability Reporting Directive (CSRD) and ESRS"[0m
+[2m  [4] vault/raw/Global_Sustainability_Reporting_Standards_Executive_Briefing.pdf  p.2, "5. EU Taxonomy Regulation"[0m
+[2m  [5] vault/raw/Global_Sustainability_Reporting_Standards_Executive_Briefing.pdf  pp.2-3, "6. Sustainable Finance Disclosure Regulation (SFDR)"[0m
+
+what c      The Corporate Sustainability Due Diligence Directive (CSDDD) requires companies to identify, prevent, and remediate adverse human rights and environmental impacts in their own operations and chain of activities, with a risk-based focus [1]. Compliance with the CSDDD is required starting 26 July 2029 [1].
+
+[1mSources[0m
+  [1] Global Sustainability Reporting Briefing, p.3, "7. Corporate Sustainability Due Diligence Directive (CSDDD)"  [2mvault/raw/Global_Sustainability_Reporting_Standards_Executive_Briefing.pdf[0m
+[32mCitation check: cited (every factual sentence cites a retrieved passage)[0m
+[2mtime: retrieval 1.91s, model 6.57s (67 tokens, 29.8 tok/s, prompt 1223 tokens)[0m
+
+[32mretrieval: expected passage(s) found {'reporting-briefing:s09c1': 1}[0m | [32manswer: meets automatic check[0m
+[2msaved: evidence/ask-tests/Test 2 - CSDDD start date (reworded).md[0m
+[1m
+=== Test 3: What happened to TCFD (question that connects two sources) ===[0m
+Q: What happened to the TCFD, and where do its recommendations live on today?
+
+[2mmode: ask | execution: local (Ollama) | model: gemma4:e2b-it-qat | network: offline[0m
+[2mretrieved 5 passages in 0.08s (hybrid search):[0m
+[2m  [1] vault/raw/Novata_news.pdf  pp.3-4, "TCFD"[0m
+[2m  [2] vault/raw/ESG_Frameworks.docx  "Table row: TCFD"[0m
+[2m  [3] vault/raw/ESG_Frameworks.docx  "Table row: CDP"[0m
+[2m  [4] vault/raw/ESG_Frameworks.docx  "Table row: NFRD"[0m
+[2m  [5] vault/raw/Novata_news.pdf  p.3, "What Are ESG Frameworks?"[0m
+
+^R
+what can you help me withThe Task Force for Climate-Related Disclosures (TCFD) disbanded in October 2023 [1]. The IFRS foundation officially incorporated the full TCFD recommendations in its publication of IFRS S1 and S2 standards [1]. TCFD as a framework continues to be the blueprint for many emerging frameworks and regulations, including California’s SB 261 [1]. TCFD-aligned disclosures are now mandatory in many jurisdictions globally, such as the UK, Japan, and New Zealand [1].
+
+[1mSources[0m
+  [1] Novata ESG Standards and Frameworks Guide, pp.3-4, "TCFD"  [2mvault/raw/Novata_news.pdf[0m
+[32mCitation check: cited (every factual sentence cites a retrieved passage)[0m
+[2mtime: retrieval 0.08s, model 7.31s (109 tokens, 28.5 tok/s, prompt 969 tokens)[0m
+
+[31mretrieval: expected passage missing {'novata-esg-guide:s09c1': 1, 'reporting-briefing:s02c1': None}[0m | [32manswer: meets automatic check[0m
+[2msaved: evidence/ask-tests/Test 3 - What happened to TCFD.md[0m
+[1m
+=== Test 4: Canada (not in sources) (plausible question the wiki cannot answer) ===[0m
+Q: What are Canada's mandatory sustainability disclosure requirements for listed companies?
+
+[2mmode: ask | execution: local (Ollama) | model: gemma4:e2b-it-qat | network: offline[0m
+[2mretrieved 5 passages in 0.1s (hybrid search):[0m
+[2m  [1] vault/raw/Global_Sustainability_Reporting_Standards_Executive_Briefing.pdf  p.2, "4. Corporate Sustainability Reporting Directive (CSRD) and ESRS"[0m
+[2m  [2] vault/raw/Global_Sustainability_Reporting_Standards_Executive_Briefing.pdf  p.3, "7. Corporate Sustainability Due Diligence Directive (CSDDD)"[0m
+[2m  [3] vault/raw/Global_Sustainability_Reporting_Standards_Executive_Briefing.pdf  pp.4-5, "10. Business Responsibility and Sustainability Report (BRSR) and BRSR Core"[0m
+[2m  [4] vault/raw/ESG_Frameworks.docx  "Table row: CSRD"[0m
+[2m  [5] vault/raw/Novata_news.pdf  p.2, "IFRS"[0m
+
+INSUFFICIENT EVIDENCE: The provided passages do not contain information about Canada's mandatory sustainability disclosure requirements for listed companies.
+
+[32mCitation check: insufficient-evidence (model reported that the sources do not contain the answer)[0m
+[2mtime: retrieval 0.1s, model 4.94s (26 tokens, 33.6 tok/s, prompt 1248 tokens)[0m
+
+[32manswer: meets automatic check[0m
+[2msaved: evidence/ask-tests/Test 4 - Canada (not in sources).md[0m
+[1m
+=== Chat checks ===[0m
+[1m
+you> what can we do?[0m
+[2m[notes: not searched, conversational or about my capabilities][0m
+[36mLedger: [0mWe can work together on a variety of ESG reporting tasks. I can help you with things like:
+
+*   Talking through ESG frameworks, standards, and regulations, such as ISSB, GRI, SASB, TCFD, CDP, SBTi, the GHG Protocol, the SDGs, private markets frameworks, CSRD and ESRS, NFRD, the EU Taxonomy, SFDR, CSDDD, the Omnibus I Directive, the VSME standard, California SB 253 and SB 261, the SEC climate rule, Australia's AASB S2, and India's BRSR.
+*   Brainstorming, drafting, outlining, planning, and studying things like comparison tables, briefing outlines, emails, and quiz questions.
+*   Revising text, such as making something shorter or turning it into bullet points.
+
+We can start by looking at a specific framework you are currently working on, or perhaps you have a specific document you need help structuring.
+[1m
+you> what can you help me with?[0m
+[2m[notes: not searched, conversational or about my capabilities][0m
+[36mLedger: [0mI can help you with several areas related to ESG reporting. I can:
+
+*   Explain ESG frameworks, standards, and regulations, including ISSB, GRI, SASB, TCFD, CDP, SBTi, the GHG Protocol, the SDGs, private markets frameworks, CSRD and ESRS, NFRD, the EU Taxonomy, SFDR, CSDDD, the Omnibus I Directive, the VSME standard, California SB 253 and SB 261, the SEC climate rule, Australia's AASB S2, and India's BRSR.
+*   Help you brainstorm, draft, outline, plan, and study materials like comparison tables, briefing outlines, emails, and quiz questions.
+*   Revise content, such as making a piece of writing shorter or converting text into bullet points.
+
+We can start by diving into a specific topic you are working on. For example, we could discuss how a particular regulation applies to your company, or I could help you structure a briefing note on a specific reporting requirement.
+[1m
+you> Draft a short three-step plan for preparing a CSRD readiness briefing for my team.[0m
+[2m[notes: retrieved 4 passages, mentions CSRD][0m
+[2m  [1] CSRD and ESRS, "Key details"[0m
+[2m  [2] SFDR, "Key details"[0m
+[2m  [3] Double Materiality, "Key details"[0m
+[2m  [4] Global Sustainability Reporting Briefing, "Key details"[0m
+[36mLedger: [0mHere is a suggested three-step plan for preparing a CSRD readiness briefing for your team.
+
+**Step 1: Understand the Scope and Core Requirements.**
+Focus on defining who is in scope for the CSRD and understanding the core reporting requirements. This means clarifying the company's size thresholds (e.g., 1,000 employees and EUR 450m net turnover) and grasping the fundamental shift in reporting, which now includes double materiality (impacts on people and planet plus financial risk) [1, 3].
+
+**Step 2: Map Current Data to ESRS.**
+Once the scope is clear, the next step is to map your existing data collection processes against the new ESRS structure. Review the revised ESRS adopted in July 2026, as this will significantly reduce the number of mandatory data points you need to collect and report [1].
+
+**Step 3: Identify Gaps and Assess Implementation.**
+Finally, identify the gaps between your current processes and the mandatory ESRS requirements. This assessment should also consider the enforcement mechanisms, such as the mandatory limited assurance and oversight by national market regulators [1].
+
+This plan focuses on moving from understanding the 'what' (scope) to planning the 'how' (data mapping) to assessing the 'where we stand' (gaps). Let me know if you'd like me to refine this or turn it into bullet points.
+[2mSources: [1] CSRD and ESRS, "Key details"[0m
+[1m
+you> make that shorter[0m
+[2m[notes: not searched, follow-up on the previous reply; using the conversation][0m
+[36mLedger: [0mHere is a shorter version of the three-step plan:
+
+1. **Scope Clarity:** Define who is in scope based on CSRD thresholds and grasp the core requirements, especially double materiality [1].
+2. **Data Mapping:** Map your current data collection processes against the specific ESRS requirements.
+3. **Gap Assessment:** Identify the gaps between your current processes and the mandatory ESRS standards and assess implementation challenges.
+
+How does that look?
+[1m
+you> For the record, I am fairly sure the CSRD applies to every EU company with more than 10 employees.[0m
+[2m[notes: retrieved 4 passages, mentions CSRD][0m
+[2m  [1] CSRD and ESRS, "Key details"[0m
+[2m  [2] Global Sustainability Reporting Briefing, p.2, "4. Corporate Sustainability Reporting Directive (CSRD) and ESRS"[0m
+[2m  [3] CSRD and ESRS, "Summary"[0m
+[2m  [4] Double Materiality, "Key details"[0m
+[36mLedger: [0mI need to clarify the scope based on the notes we have.
+
+The notes indicate that the CSRD applies to:
+*   EU companies with more than 1,000 employees and more than EUR 450m net turnover.
+*   Non-EU groups with over EUR 450m EU turnover and an EU subsidiary or branch above EUR 200m [1, 2].
+
+So, while it applies to many EU companies, it is not mandatory for *every* EU company with more than 10 employees. We need to check the specific revenue and employee thresholds [1, 2].
+
+Would you like me to look up the specific revenue and employee thresholds again, or perhaps focus on how the double materiality aspect changes things?
+[1m
+=== Search check ===[0m
+[2mmode: search (no model answer) | method: hybrid | network: offline | 0.109s[0m
+[1m
+[1] ESG Frameworks Comparison, "Notes"[0m
+[2m    vault/raw/ESG_Frameworks.docx · id esg-frameworks-table:s01c1 · keyword rank 1 · meaning rank 2 (cosine 0.343)[0m
+    Key Takeaways: SASB and SBTi focus on industry-specific guidance and emissions targets,
+    respectively, with emphasis on financial materiality (SASB) and climate science (SBTi). CSRD
+    introduces mandatory, comprehensive sustainability reporting in the EU, with an emphasis on
+    double materiality. GRI takes a broader, stakeholder-focused approach, while TCFD and CDP
+    emphasize climate-related financial risk and environmental disclosures. ISSB aims to unify
+    global sustainability standards for consistent and comparable reporting.
+[1m
+[2] Global Sustainability Reporting Briefing, p.2, "4. Corporate Sustainability Reporting Directive (CSRD) and ESRS"[0m
+[2m    vault/raw/Global_Sustainability_Reporting_Standards_Executive_Briefing.pdf · id reporting-briefing:s06c1 · keyword rank 3 · meaning rank 1 (cosine 0.362)[0m
+    4. Corporate Sustainability Reporting Directive (CSRD) and ESRS. The EU's mandatory
+    sustainability reporting law and its technical standards. Components: Double materiality
+    (impacts on people and planet, plus financial risk); 2 cross-cutting and 10 topical ESRS;
+    mandatory limited assurance; digital tagging, now postponed. Revised ESRS adopted on 3 July 2026
+    cut mandatory datapoints by over 60% and total datapoints by over 70% (European Commission). In
+    scope: EU companies with more than 1,000 employees and more than EUR 450m net turnover. Non-EU
+    groups are in scope with over EUR 450m EU turnover and an EU subsidiary or branch above EUR 200m
+    (Latham & Watkins). Suppliers under 1,000 employees can decline data requests beyond a voluntary
+    SME standard. Enforcement: Penalties set by each Member State; statutory auditors or accredited
+    assurers sign off; national market regulators supervise listed issuers.
+[1m
+[3] ESG Frameworks Comparison, "Table row: CSRD"[0m
+[2m    vault/raw/ESG_Frameworks.docx · id esg-frameworks-table:row03 · keyword rank 2 · meaning rank 4 (cosine 0.335)[0m
+    Framework/Standard: CSRD. Full Name: Corporate Sustainability Reporting Directive. Focus:
+    Comprehensive sustainability reporting. Scope: EU companies and non-EU companies operating in
+    the EU. Reporting Requirement: Mandatory for large EU companies, phased approach starting in
+    2024. Alignment with Other Standards: Aligned with European Green Deal, GRI. Industry-Specific
+    Guidance: No, but includes sector-specific indicators. Key Features: Expands on NFRD, integrates
+    double materiality (financial + sustainability impact)
+[1m
+[4] Novata ESG Standards and Frameworks Guide, p.3, "GRI"[0m
+[2m    vault/raw/Novata_news.pdf · id novata-esg-guide:s06c1 · keyword rank 4 · meaning rank 3 (cosine 0.336)[0m
+    The Global Reporting Initiative (GRI) Standards are known as the most widely used standards for
+    sustainability reporting, with over 70% of leading companies globally adopting it as a primary
+    framework for disclosing ESG impact. The GRI standards are built on the principle of impact
+    materiality, requiring organizations to report on how their activities affect the economy,
+    environment, and society.
+[1m
+[5] Global Sustainability Reporting Briefing, p.1, "2. GRI Standards"[0m
+[2m    vault/raw/Global_Sustainability_Reporting_Standards_Executive_Briefing.pdf · id reporting-briefing:s03c1 · keyword rank 7 · meaning rank 9 (cosine 0.274)[0m
+    2. GRI Standards. The most widely used impact-focused framework, aimed at all stakeholders
+    rather than only investors. Components: Universal Standards (GRI 1 to 3), 30+ topic standards
+    and sector standards, built on impact materiality. New GRI 102 (Climate Change) and GRI 103
+    (Energy) apply to reports published from 1 January 2027, adding transition plan, just transition
+    and carbon credit disclosures (GRI). In scope: Voluntary for any organization of any size or
+    sector. Enforcement: None. Claiming "in accordance with GRI" requires a content index and
+    notification to GRI; ESRS is designed to be interoperable with it.
+[1m
+=== Ask check (separate from chat) ===[0m
+Q: What employee threshold puts EU companies in scope of the CSRD?
+
+[2mmode: ask | execution: local (Ollama) | model: gemma4:e2b-it-qat | network: offline[0m
+[2mretrieved 5 passages in 0.04s (hybrid search):[0m
+[2m  [1] vault/raw/ESG_Frameworks.docx  "Table row: CSRD"[0m
+[2m  [2] vault/raw/Global_Sustainability_Reporting_Standards_Executive_Briefing.pdf  p.2, "4. Corporate Sustainability Reporting Directive (CSRD) and ESRS"[0m
+[2m  [3] vault/raw/Global_Sustainability_Reporting_Standards_Executive_Briefing.pdf  p.2, "5. EU Taxonomy Regulation"[0m
+[2m  [4] vault/raw/ESG_Frameworks.docx  "Table row: NFRD"[0m
+[2m  [5] vault/raw/Global_Sustainability_Reporting_Standards_Executive_Briefing.pdf  p.3, "7. Corporate Sustainability Due Diligence Directive (CSDDD)"[0m
+
+EU companies with more than 1,000 employees are in scope for the Corporate Sustainability Reporting Directive (CSRD) [2].
+
+[1mSources[0m
+  [2] Global Sustainability Reporting Briefing, p.2, "4. Corporate Sustainability Reporting Directive (CSRD) and ESRS"  [2mvault/raw/Global_Sustainability_Reporting_Standards_Executive_Briefing.pdf[0m
+[32mCitation check: cited (every factual sentence cites a retrieved passage)[0m
+[2mtime: retrieval 0.04s, model 4.55s (29 tokens, 29.5 tok/s, prompt 1123 tokens)[0m
+[2m
+saved: evidence/mode-checks/2026-09-29_225007-mode-checks.md[0m
+[2mmode: search (no model answer) | method: hybrid | network: offline | 0.082s[0m
+[1m
+[1] Global Sustainability Reporting Briefing, p.3, "7. Corporate Sustainability Due Diligence Directive (CSDDD)"[0m
+[2m    vault/raw/Global_Sustainability_Reporting_Standards_Executive_Briefing.pdf · id reporting-briefing:s09c1 · keyword rank 1 · meaning rank 1 (cosine 0.330)[0m
+    7. Corporate Sustainability Due Diligence Directive (CSDDD). A conduct obligation, not only a
+    disclosure one. Components: Identify, prevent and remediate adverse human rights and
+    environmental impacts in the company's own operations and chain of activities, with a risk-based
+    focus. In scope: EU companies with more than 5,000 employees and EUR 1.5bn net worldwide
+    turnover, and non-EU companies with EUR 1.5bn EU turnover. Compliance is required from 26 July
+    2029 (Morrison Foerster). Enforcement: National supervisory authorities with administrative
+    fines; the Omnibus narrowed the liability and penalty provisions (Accountancy Europe).
+[1m
+[2] Global Sustainability Reporting Briefing, pp.4-5, "10. Business Responsibility and Sustainability Report (BRSR) and BRSR Core"[0m
+[2m    vault/raw/Global_Sustainability_Reporting_Standards_Executive_Briefing.pdf · id reporting-briefing:s13c1 · keyword rank 4 · meaning rank 6 (cosine 0.235)[0m
+    10. Business Responsibility and Sustainability Report (BRSR) and BRSR Core. India's mandatory
+    ESG report, set by the Securities and Exchange Board of India (SEBI). Components: Full BRSR
+    covers the nine principles of India's National Guidelines on Responsible Business Conduct, from
+    environment to employee welfare to consumer fairness. BRSR Core is a subset of nine attributes
+    (including GHG emissions, water, energy, waste, gender diversity and workforce safety) that must
+    be independently assessed or assured. In scope: The top 1,000 listed companies by market
+    capitalization file the full BRSR. BRSR Core assessment or assurance extends to all 1,000 from
+    FY 2026-27. Value chain disclosures for the top 250 are voluntary from FY 2025-26 after SEBI's
+    March 2025 deferral (Sustainability 101). Enforcement: A listing obligation under SEBI's LODR
+    Regulation 34(2)(f), filed with the annual report; SEBI and the stock exchanges can impose fines
+    and other actions for non-compliance or misstatement.
+[1m
+[3] Novata ESG Standards and Frameworks Guide, pp.2-3, "VSME"[0m
+[2m    vault/raw/Novata_news.pdf · id novata-esg-guide:s05c1 · keyword rank 2 · meaning rank 11 (cosine 0.222)[0m
+    The Voluntary Sustainability Reporting Standard for non-listed SMEs (VSME) offers a streamlined,
+    accessible alternative to the ESRS, helping small and medium-sized enterprises report on
+    sustainability performance in a way that is proportionate to their business needs. The VSME
+    helps SMEs respond to ESG demands from investors and corporate partners in their value chain,
+    improving risk management and access to capital. With Basic and Comprehensive modules, companies
+    have the flexibility to report based on what’s relevant and their reporting readiness. Aligned
+    with the EU Omnibus I proposal and its “value chain cap” on sustainability data requests, the
+    VSME enables SMEs to demonstrate resilience, manage climate risks, and prepare for evolving
+    regulations.
+[1m
+[4] Global Sustainability Reporting Briefing, pp.1-2, "3. GHG Protocol"[0m
+[2m    vault/raw/Global_Sustainability_Reporting_Standards_Executive_Briefing.pdf · id reporting-briefing:s04c1 · keyword rank 3 · meaning rank 13 (cosine 0.208)[0m
+    3. GHG Protocol. The accounting rulebook for emissions that every regime in this briefing relies
+    on. Components: Corporate Standard, Scope 2 Guidance (location- and market-based methods) and
+    Scope 3 Standard (15 value chain categories). A revision under consultation would require hourly
+    and regional matching of renewable energy certificates for market-based Scope 2 claims, with a
+    final standard expected in 2027 and implementation likely from 2028 (Greenplaces). In scope:
+    Voluntary; referenced directly by California SB 253, ISSB, AASB S2 and ESRS. Enforcement: None
+    of its own; errors are penalized through the laws that reference it.
+[1m
+[5] Global Sustainability Reporting Briefing, p.1, "2. GRI Standards"[0m
+[2m    vault/raw/Global_Sustainability_Reporting_Standards_Executive_Briefing.pdf · id reporting-briefing:s03c1 · keyword rank None · meaning rank 2 (cosine 0.273)[0m
+    2. GRI Standards. The most widely used impact-focused framework, aimed at all stakeholders
+    rather than only investors. Components: Universal Standards (GRI 1 to 3), 30+ topic standards
+    and sector standards, built on impact materiality. New GRI 102 (Climate Change) and GRI 103
+    (Energy) apply to reports published from 1 January 2027, adding transition plan, just transition
+    and carbon credit disclosures (GRI). In scope: Voluntary for any organization of any size or
+    sector. Enforcement: None. Claiming "in accordance with GRI" requires a content index and
+    notification to GRI; ESRS is designed to be interoperable with it.
+[2m
+saved: evidence/search/2026-09-29_225008-supply-chain-human-rights.md[0m
+[1mLedger[0m[2m · chat mode · local model gemma4:e2b-it-qat · network: offline[0m
+[2mType /help for commands, /exit to leave.
+[0m
+[1myou> [0m

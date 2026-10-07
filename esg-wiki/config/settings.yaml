@@ -1,0 +1,38 @@
+# Harness settings. Every value here is read by wikicli/config.py.
+# Local mode is the default and the only mode implemented.
+
+ollama:
+  url: http://127.0.0.1:11434        # must be a local address (checked at startup)
+  timeout_seconds: 600
+
+models:
+  generator: gemma4:e2b-it-qat        # Gemma 4 E2B, instruction-tuned, QAT Q4_0 (Ollama library)
+  embedder: embeddinggemma            # EmbeddingGemma 300M, used for the semantic half of hybrid search
+  think: false                        # Gemma 4 thinking mode off: faster and fits 8 GB better
+
+generation:
+  ask:    {temperature: 0.0, num_ctx: 4096, num_predict: 400}
+  chat:   {temperature: 0.7, top_p: 0.95, top_k: 64, num_ctx: 4096, num_predict: 500}
+  ingest: {temperature: 0.2, num_ctx: 8192, num_predict: 700}
+
+retrieval:
+  method: hybrid          # hybrid | keyword | semantic
+  top_k: 5                # passages handed to Gemma in ask mode
+  chat_top_k: 4           # passages handed to Gemma when chat decides to retrieve
+  candidates: 20          # how many results each retriever contributes before fusion
+  rrf_k: 60               # Reciprocal Rank Fusion constant
+  bm25_k1: 1.5
+  bm25_b: 0.75
+
+chunking:
+  target_words: 170       # passages are split at sentence boundaries near this size
+  max_words: 240
+  min_words: 25           # tiny trailing pieces are merged into the previous passage
+
+chat:
+  history_word_budget: 1800   # older turns are dropped once the conversation exceeds this
+
+ingest:
+  topic_passage_words: 1600   # max words of evidence sent to Gemma per topic note
+  topic_max_passages: 8
+  source_note_words: 2600     # max words of a source sent to Gemma for its source note

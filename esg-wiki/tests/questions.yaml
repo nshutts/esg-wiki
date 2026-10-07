@@ -1,0 +1,65 @@
+# Ask-mode test set, written before the harness was built (2026-09-29).
+# Kept outside vault/ and never indexed, so retrieval cannot find the answer key.
+#
+# expected_passages: passage IDs from the retrieval index that contain the evidence
+# (IDs look like <source-id>:s<section>c<chunk>; check them with `wiki search`).
+
+tests:
+  - id: 1
+    name: SB 253 revenue threshold
+    type: direct question answered by one source
+    question: What revenue threshold puts a company in scope of California SB 253?
+    expected_behavior: Answer with the SB 253 threshold and cite the briefing.
+    expected_answer: >-
+      US-organized entities doing business in California with total annual revenue above
+      $1bn, measured globally (SB 261 uses $500m).
+    expected_sources:
+      - file: vault/raw/Global_Sustainability_Reporting_Standards_Executive_Briefing.pdf
+        location: pp.3-4, section 8 "California SB 253 and SB 261", In scope paragraph
+    expected_passages: [reporting-briefing:s11c1]
+
+  - id: 2
+    name: CSDDD start date (reworded)
+    type: answerable question phrased differently from the source
+    question: >-
+      When do the largest European companies have to start checking their supply chains
+      for human rights and environmental harm?
+    expected_behavior: >-
+      Retrieval should find the CSDDD passage even though the question never says
+      "CSDDD" or "due diligence". Answer with the 26 July 2029 date and the size thresholds.
+    expected_answer: >-
+      Under the CSDDD, compliance is required from 26 July 2029 for EU companies with more
+      than 5,000 employees and EUR 1.5bn net worldwide turnover, and non-EU companies with
+      EUR 1.5bn EU turnover.
+    expected_sources:
+      - file: vault/raw/Global_Sustainability_Reporting_Standards_Executive_Briefing.pdf
+        location: p.3, section 7 "Corporate Sustainability Due Diligence Directive (CSDDD)"
+    expected_passages: [reporting-briefing:s09c1]
+
+  - id: 3
+    name: What happened to TCFD
+    type: question that connects two sources
+    question: What happened to the TCFD, and where do its recommendations live on today?
+    expected_behavior: Combine the Novata article and the briefing, citing both.
+    expected_answer: >-
+      The TCFD disbanded in October 2023; the IFRS Foundation incorporated its
+      recommendations into IFRS S1 and S2, which use the four TCFD pillars. SB 261 reports
+      may follow TCFD or ISSB, and TCFD-aligned disclosures are mandatory in jurisdictions
+      such as the UK, Japan and New Zealand.
+    expected_sources:
+      - file: vault/raw/Novata_news.pdf
+        location: pp.3-4, section "TCFD"
+      - file: vault/raw/Global_Sustainability_Reporting_Standards_Executive_Briefing.pdf
+        location: p.1, section 1 "ISSB Standards (IFRS S1 and S2)"; pp.3-4, section 8 (SB 261)
+    expected_passages: [novata-esg-guide:s09c1, reporting-briefing:s02c1]
+
+  - id: 4
+    name: Canada (not in sources)
+    type: plausible question the wiki cannot answer
+    question: What are Canada's mandatory sustainability disclosure requirements for listed companies?
+    expected_behavior: >-
+      An explicit insufficient-evidence response. None of the three sources mention Canada,
+      so any specific Canadian rule in the answer is a failure.
+    expected_answer: INSUFFICIENT EVIDENCE
+    expected_sources: []
+    expected_passages: []

@@ -1,0 +1,12 @@
+{
+  "embedder": "embeddinggemma",
+  "generator": "gemma4:e2b-it-qat",
+  "source_hashes": {
+    "esg-frameworks-table": "367b2d7c2fe64dbf78bddf6386357f6cc02e790d7ce16b37323abda5b475e3c3",
+    "novata-esg-guide": "617dfed82b1196bc341290e7fe50a3bb2fc61c34e0d2817f40eb780c0f794121",
+    "reporting-briefing": "2f37955d1ee17ba4d13c839abb60d6089fd8d9ec189acaba6d5e5ada504e5045"
+  },
+  "built_at": "2026-09-29 23:05:18",
+  "passages": 91,
+  "has_embeddings": true
+}

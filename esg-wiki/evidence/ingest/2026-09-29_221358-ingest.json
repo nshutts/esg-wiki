@@ -1,0 +1,628 @@
+{
+  "mode": "ingest",
+  "execution": "local",
+  "network_at_run_time": "online",
+  "timestamp": "2026-09-29 22:13:58 PDT",
+  "target": "vault/raw",
+  "files": [
+    "ESG_Frameworks.docx",
+    "Global_Sustainability_Reporting_Standards_Executive_Briefing.pdf",
+    "Novata_news.pdf"
+  ],
+  "force": false,
+  "model": {
+    "name": "gemma4:e2b-it-qat",
+    "digest": "07ea59a47401",
+    "size_gb": 4.34,
+    "family": "gemma4",
+    "parameter_size": "4.6B",
+    "quantization": "Q4_0",
+    "format": "gguf"
+  },
+  "embedding_model": {
+    "name": "embeddinggemma",
+    "digest": "85462619ee72",
+    "size_gb": 0.62,
+    "family": "gemma3",
+    "parameter_size": "307.58M",
+    "quantization": "BF16",
+    "format": "gguf"
+  },
+  "runtime": {
+    "runtime": "Ollama",
+    "version": "0.35.0",
+    "url": "http://127.0.0.1:11434"
+  },
+  "notes": [
+    {
+      "note": "wiki/Sources/ESG Frameworks Comparison.md",
+      "passages": [
+        "esg-frameworks-table:row01",
+        "esg-frameworks-table:row02",
+        "esg-frameworks-table:row03",
+        "esg-frameworks-table:row04",
+        "esg-frameworks-table:row05",
+        "esg-frameworks-table:row06",
+        "esg-frameworks-table:row07",
+        "esg-frameworks-table:row08",
+        "esg-frameworks-table:s01c1"
+      ],
+      "status": "written",
+      "seconds": 29.7,
+      "review_flags": [],
+      "stats": {
+        "wall_seconds": 29.68,
+        "time_to_first_token_seconds": 22.18,
+        "load_seconds": 12.46,
+        "prompt_tokens": 1246,
+        "prompt_eval_seconds": 6.66,
+        "output_tokens": 244,
+        "output_tokens_per_second": 30.9,
+        "done_reason": "stop"
+      }
+    },
+    {
+      "note": "wiki/Sources/Novata ESG Standards and Frameworks Guide.md",
+      "passages": [
+        "novata-esg-guide:s01c1",
+        "novata-esg-guide:s02c1",
+        "novata-esg-guide:s03c1",
+        "novata-esg-guide:s04c1",
+        "novata-esg-guide:s05c1",
+        "novata-esg-guide:s06c1",
+        "novata-esg-guide:s07c1",
+        "novata-esg-guide:s08c1",
+        "novata-esg-guide:s09c1",
+        "novata-esg-guide:s10c1",
+        "novata-esg-guide:s11c1",
+        "novata-esg-guide:s12c1",
+        "novata-esg-guide:s13c1",
+        "novata-esg-guide:s14c1"
+      ],
+      "status": "written",
+      "seconds": 19.3,
+      "review_flags": [],
+      "stats": {
+        "wall_seconds": 19.32,
+        "time_to_first_token_seconds": 8.04,
+        "load_seconds": 0.26,
+        "prompt_tokens": 2051,
+        "prompt_eval_seconds": 6.72,
+        "output_tokens": 388,
+        "output_tokens_per_second": 34.4,
+        "done_reason": "stop"
+      }
+    },
+    {
+      "note": "wiki/Sources/Global Sustainability Reporting Briefing.md",
+      "passages": [
+        "reporting-briefing:s01c1",
+        "reporting-briefing:s02c1",
+        "reporting-briefing:s03c1",
+        "reporting-briefing:s04c1",
+        "reporting-briefing:s05c1",
+        "reporting-briefing:s06c1",
+        "reporting-briefing:s07c1",
+        "reporting-briefing:s08c1",
+        "reporting-briefing:s09c1",
+        "reporting-briefing:s10c1",
+        "reporting-briefing:s11c1",
+        "reporting-briefing:s12c1",
+        "reporting-briefing:s13c1"
+      ],
+      "status": "written",
+      "seconds": 23.8,
+      "review_flags": [],
+      "stats": {
+        "wall_seconds": 23.76,
+        "time_to_first_token_seconds": 8.93,
+        "load_seconds": 0.02,
+        "prompt_tokens": 2815,
+        "prompt_eval_seconds": 8.8,
+        "output_tokens": 503,
+        "output_tokens_per_second": 34.0,
+        "done_reason": "stop"
+      }
+    },
+    {
+      "note": "wiki/Frameworks and Standards/ISSB Standards.md",
+      "passages": [
+        "reporting-briefing:s02c1",
+        "esg-frameworks-table:row07",
+        "novata-esg-guide:s03c1"
+      ],
+      "status": "written",
+      "seconds": 8.7,
+      "review_flags": [],
+      "stats": {
+        "wall_seconds": 8.74,
+        "time_to_first_token_seconds": 2.0,
+        "load_seconds": 0.0,
+        "prompt_tokens": 690,
+        "prompt_eval_seconds": 1.94,
+        "output_tokens": 237,
+        "output_tokens_per_second": 35.2,
+        "done_reason": "stop"
+      }
+    },
+    {
+      "note": "wiki/Frameworks and Standards/GRI Standards.md",
+      "passages": [
+        "reporting-briefing:s03c1",
+        "novata-esg-guide:s06c1",
+        "esg-frameworks-table:row05"
+      ],
+      "status": "written",
+      "seconds": 9.5,
+      "review_flags": [],
+      "stats": {
+        "wall_seconds": 9.47,
+        "time_to_first_token_seconds": 1.31,
+        "load_seconds": 0.0,
+        "prompt_tokens": 609,
+        "prompt_eval_seconds": 1.27,
+        "output_tokens": 282,
+        "output_tokens_per_second": 34.5,
+        "done_reason": "stop"
+      }
+    },
+    {
+      "note": "wiki/Frameworks and Standards/SASB Standards.md",
+      "passages": [
+        "esg-frameworks-table:row01",
+        "novata-esg-guide:s04c1",
+        "esg-frameworks-table:row07",
+        "esg-frameworks-table:s01c1",
+        "novata-esg-guide:s01c1"
+      ],
+      "status": "written",
+      "seconds": 7.9,
+      "review_flags": [],
+      "stats": {
+        "wall_seconds": 7.87,
+        "time_to_first_token_seconds": 1.98,
+        "load_seconds": 0.0,
+        "prompt_tokens": 831,
+        "prompt_eval_seconds": 1.94,
+        "output_tokens": 207,
+        "output_tokens_per_second": 35.1,
+        "done_reason": "stop"
+      }
+    },
+    {
+      "note": "wiki/Frameworks and Standards/TCFD.md",
+      "passages": [
+        "novata-esg-guide:s09c1",
+        "esg-frameworks-table:row04"
+      ],
+      "status": "written",
+      "seconds": 8.2,
+      "review_flags": [],
+      "stats": {
+        "wall_seconds": 8.23,
+        "time_to_first_token_seconds": 1.19,
+        "load_seconds": 0.0,
+        "prompt_tokens": 572,
+        "prompt_eval_seconds": 1.16,
+        "output_tokens": 244,
+        "output_tokens_per_second": 34.7,
+        "done_reason": "stop"
+      }
+    },
+    {
+      "note": "wiki/Frameworks and Standards/CDP.md",
+      "passages": [
+        "novata-esg-guide:s10c1",
+        "esg-frameworks-table:row06",
+        "novata-esg-guide:s07c1"
+      ],
+      "status": "written",
+      "seconds": 7.5,
+      "review_flags": [],
+      "stats": {
+        "wall_seconds": 7.47,
+        "time_to_first_token_seconds": 1.32,
+        "load_seconds": 0.01,
+        "prompt_tokens": 591,
+        "prompt_eval_seconds": 1.25,
+        "output_tokens": 217,
+        "output_tokens_per_second": 35.3,
+        "done_reason": "stop"
+      }
+    },
+    {
+      "note": "wiki/Frameworks and Standards/SBTi.md",
+      "passages": [
+        "esg-frameworks-table:row02",
+        "esg-frameworks-table:s01c1"
+      ],
+      "status": "written",
+      "seconds": 5.9,
+      "review_flags": [],
+      "stats": {
+        "wall_seconds": 5.87,
+        "time_to_first_token_seconds": 0.93,
+        "load_seconds": 0.0,
+        "prompt_tokens": 488,
+        "prompt_eval_seconds": 0.91,
+        "output_tokens": 172,
+        "output_tokens_per_second": 34.8,
+        "done_reason": "stop"
+      }
+    },
+    {
+      "note": "wiki/Frameworks and Standards/GHG Protocol.md",
+      "passages": [
+        "reporting-briefing:s04c1"
+      ],
+      "status": "written",
+      "seconds": 7.0,
+      "review_flags": [],
+      "stats": {
+        "wall_seconds": 6.99,
+        "time_to_first_token_seconds": 0.79,
+        "load_seconds": 0.0,
+        "prompt_tokens": 421,
+        "prompt_eval_seconds": 0.74,
+        "output_tokens": 211,
+        "output_tokens_per_second": 34.0,
+        "done_reason": "stop"
+      }
+    },
+    {
+      "note": "wiki/Frameworks and Standards/UN Sustainable Development Goals.md",
+      "passages": [
+        "novata-esg-guide:s12c1",
+        "novata-esg-guide:s07c1"
+      ],
+      "status": "written",
+      "seconds": 6.0,
+      "review_flags": [],
+      "stats": {
+        "wall_seconds": 5.99,
+        "time_to_first_token_seconds": 1.25,
+        "load_seconds": 0.02,
+        "prompt_tokens": 580,
+        "prompt_eval_seconds": 1.18,
+        "output_tokens": 168,
+        "output_tokens_per_second": 35.4,
+        "done_reason": "stop"
+      }
+    },
+    {
+      "note": "wiki/Frameworks and Standards/Private Markets ESG Frameworks.md",
+      "passages": [
+        "novata-esg-guide:s12c1",
+        "novata-esg-guide:s11c1"
+      ],
+      "status": "written",
+      "seconds": 7.8,
+      "review_flags": [],
+      "stats": {
+        "wall_seconds": 7.8,
+        "time_to_first_token_seconds": 1.18,
+        "load_seconds": 0.0,
+        "prompt_tokens": 572,
+        "prompt_eval_seconds": 1.16,
+        "output_tokens": 232,
+        "output_tokens_per_second": 35.0,
+        "done_reason": "stop"
+      }
+    },
+    {
+      "note": "wiki/Europe/CSRD and ESRS.md",
+      "passages": [
+        "reporting-briefing:s06c1",
+        "esg-frameworks-table:row03"
+      ],
+      "status": "written",
+      "seconds": 10.8,
+      "review_flags": [],
+      "stats": {
+        "wall_seconds": 10.8,
+        "time_to_first_token_seconds": 1.4,
+        "load_seconds": 0.0,
+        "prompt_tokens": 625,
+        "prompt_eval_seconds": 1.36,
+        "output_tokens": 316,
+        "output_tokens_per_second": 33.6,
+        "done_reason": "stop"
+      }
+    },
+    {
+      "note": "wiki/Europe/NFRD.md",
+      "passages": [
+        "esg-frameworks-table:row08"
+      ],
+      "status": "written",
+      "seconds": 4.8,
+      "review_flags": [],
+      "stats": {
+        "wall_seconds": 4.8,
+        "time_to_first_token_seconds": 0.59,
+        "load_seconds": 0.0,
+        "prompt_tokens": 365,
+        "prompt_eval_seconds": 0.56,
+        "output_tokens": 146,
+        "output_tokens_per_second": 34.6,
+        "done_reason": "stop"
+      }
+    },
+    {
+      "note": "wiki/Europe/EU Taxonomy.md",
+      "passages": [
+        "reporting-briefing:s07c1"
+      ],
+      "status": "written",
+      "seconds": 6.7,
+      "review_flags": [],
+      "stats": {
+        "wall_seconds": 6.7,
+        "time_to_first_token_seconds": 0.75,
+        "load_seconds": 0.0,
+        "prompt_tokens": 412,
+        "prompt_eval_seconds": 0.74,
+        "output_tokens": 207,
+        "output_tokens_per_second": 34.8,
+        "done_reason": "stop"
+      }
+    },
+    {
+      "note": "wiki/Europe/SFDR.md",
+      "passages": [
+        "reporting-briefing:s08c1",
+        "reporting-briefing:s07c1"
+      ],
+      "status": "written",
+      "seconds": 9.6,
+      "review_flags": [],
+      "stats": {
+        "wall_seconds": 9.56,
+        "time_to_first_token_seconds": 1.35,
+        "load_seconds": 0.0,
+        "prompt_tokens": 618,
+        "prompt_eval_seconds": 1.32,
+        "output_tokens": 281,
+        "output_tokens_per_second": 34.2,
+        "done_reason": "stop"
+      }
+    },
+    {
+      "note": "wiki/Europe/CSDDD.md",
+      "passages": [
+        "reporting-briefing:s09c1"
+      ],
+      "status": "written",
+      "seconds": 7.2,
+      "review_flags": [],
+      "stats": {
+        "wall_seconds": 7.18,
+        "time_to_first_token_seconds": 0.81,
+        "load_seconds": 0.0,
+        "prompt_tokens": 422,
+        "prompt_eval_seconds": 0.79,
+        "output_tokens": 216,
+        "output_tokens_per_second": 33.9,
+        "done_reason": "stop"
+      }
+    },
+    {
+      "note": "wiki/Europe/Omnibus I Directive.md",
+      "passages": [
+        "reporting-briefing:s05c1",
+        "novata-esg-guide:s05c1",
+        "reporting-briefing:s09c1"
+      ],
+      "status": "written",
+      "seconds": 12.6,
+      "review_flags": [],
+      "stats": {
+        "wall_seconds": 12.62,
+        "time_to_first_token_seconds": 1.64,
+        "load_seconds": 0.01,
+        "prompt_tokens": 680,
+        "prompt_eval_seconds": 1.61,
+        "output_tokens": 362,
+        "output_tokens_per_second": 33.0,
+        "done_reason": "stop"
+      }
+    },
+    {
+      "note": "wiki/Europe/VSME Standard.md",
+      "passages": [
+        "novata-esg-guide:s05c1"
+      ],
+      "status": "written",
+      "seconds": 7.7,
+      "review_flags": [],
+      "stats": {
+        "wall_seconds": 7.68,
+        "time_to_first_token_seconds": 0.87,
+        "load_seconds": 0.0,
+        "prompt_tokens": 416,
+        "prompt_eval_seconds": 0.77,
+        "output_tokens": 225,
+        "output_tokens_per_second": 33.0,
+        "done_reason": "stop"
+      }
+    },
+    {
+      "note": "wiki/United States/California SB 253 and SB 261.md",
+      "passages": [
+        "reporting-briefing:s11c1"
+      ],
+      "status": "written",
+      "seconds": 12.9,
+      "review_flags": [],
+      "stats": {
+        "wall_seconds": 12.92,
+        "time_to_first_token_seconds": 1.62,
+        "load_seconds": 0.0,
+        "prompt_tokens": 654,
+        "prompt_eval_seconds": 1.59,
+        "output_tokens": 363,
+        "output_tokens_per_second": 32.2,
+        "done_reason": "stop"
+      }
+    },
+    {
+      "note": "wiki/United States/SEC Climate Rule.md",
+      "passages": [
+        "reporting-briefing:s10c1"
+      ],
+      "status": "written",
+      "seconds": 7.5,
+      "review_flags": [],
+      "stats": {
+        "wall_seconds": 7.47,
+        "time_to_first_token_seconds": 0.78,
+        "load_seconds": 0.02,
+        "prompt_tokens": 374,
+        "prompt_eval_seconds": 0.71,
+        "output_tokens": 221,
+        "output_tokens_per_second": 33.0,
+        "done_reason": "stop"
+      }
+    },
+    {
+      "note": "wiki/Other Jurisdictions/Australia AASB S2.md",
+      "passages": [
+        "reporting-briefing:s12c1"
+      ],
+      "status": "written",
+      "seconds": 14.1,
+      "review_flags": [],
+      "stats": {
+        "wall_seconds": 14.08,
+        "time_to_first_token_seconds": 1.46,
+        "load_seconds": 0.01,
+        "prompt_tokens": 603,
+        "prompt_eval_seconds": 1.41,
+        "output_tokens": 404,
+        "output_tokens_per_second": 32.0,
+        "done_reason": "stop"
+      }
+    },
+    {
+      "note": "wiki/Other Jurisdictions/India BRSR.md",
+      "passages": [
+        "reporting-briefing:s13c1"
+      ],
+      "status": "written",
+      "seconds": 9.6,
+      "review_flags": [],
+      "stats": {
+        "wall_seconds": 9.61,
+        "time_to_first_token_seconds": 1.24,
+        "load_seconds": 0.0,
+        "prompt_tokens": 536,
+        "prompt_eval_seconds": 1.17,
+        "output_tokens": 267,
+        "output_tokens_per_second": 31.9,
+        "done_reason": "stop"
+      }
+    },
+    {
+      "note": "wiki/Concepts/Double Materiality.md",
+      "passages": [
+        "esg-frameworks-table:s01c1",
+        "esg-frameworks-table:row03",
+        "reporting-briefing:s06c1",
+        "esg-frameworks-table:row01",
+        "esg-frameworks-table:row05",
+        "esg-frameworks-table:row07",
+        "novata-esg-guide:s04c1",
+        "novata-esg-guide:s06c1"
+      ],
+      "status": "written",
+      "seconds": 12.0,
+      "review_flags": [
+        "no citation: \"CSRD integrates double materiality, which includes impacts on people and planet \""
+      ],
+      "stats": {
+        "wall_seconds": 12.04,
+        "time_to_first_token_seconds": 3.58,
+        "load_seconds": 0.0,
+        "prompt_tokens": 1256,
+        "prompt_eval_seconds": 3.49,
+        "output_tokens": 266,
+        "output_tokens_per_second": 31.4,
+        "done_reason": "stop"
+      }
+    },
+    {
+      "note": "wiki/Concepts/Standards vs Frameworks.md",
+      "passages": [
+        "novata-esg-guide:s14c1",
+        "novata-esg-guide:s13c1",
+        "novata-esg-guide:s07c1",
+        "novata-esg-guide:s01c1",
+        "novata-esg-guide:s02c1",
+        "novata-esg-guide:s08c1"
+      ],
+      "status": "written",
+      "seconds": 12.0,
+      "review_flags": [],
+      "stats": {
+        "wall_seconds": 12.04,
+        "time_to_first_token_seconds": 2.42,
+        "load_seconds": 0.01,
+        "prompt_tokens": 918,
+        "prompt_eval_seconds": 2.37,
+        "output_tokens": 291,
+        "output_tokens_per_second": 30.3,
+        "done_reason": "stop"
+      }
+    },
+    {
+      "note": "wiki/Concepts/Scope 1 2 and 3 Emissions.md",
+      "passages": [
+        "reporting-briefing:s11c1",
+        "reporting-briefing:s04c1",
+        "reporting-briefing:s12c1",
+        "esg-frameworks-table:row02",
+        "novata-esg-guide:s10c1",
+        "novata-esg-guide:s12c1",
+        "reporting-briefing:s02c1",
+        "reporting-briefing:s13c1"
+      ],
+      "status": "written",
+      "seconds": 16.2,
+      "review_flags": [],
+      "stats": {
+        "wall_seconds": 16.19,
+        "time_to_first_token_seconds": 6.38,
+        "load_seconds": 0.01,
+        "prompt_tokens": 2056,
+        "prompt_eval_seconds": 6.16,
+        "output_tokens": 305,
+        "output_tokens_per_second": 31.1,
+        "done_reason": "stop"
+      }
+    }
+  ],
+  "unmanaged_notes": [],
+  "index": {
+    "source_passages": 36,
+    "note_sections": 55,
+    "embeddings": "embeddinggemma (91 new, 0 reused)"
+  },
+  "total_seconds": 319.4,
+  "memory": {
+    "ollama_loaded_models": [
+      {
+        "model": "embeddinggemma:latest",
+        "loaded_size_gb": 0.68,
+        "in_gpu_memory_gb": 0.68,
+        "context_length": 2048
+      },
+      {
+        "model": "gemma4:e2b-it-qat",
+        "loaded_size_gb": 1.66,
+        "in_gpu_memory_gb": 1.66,
+        "context_length": 8192
+      }
+    ],
+    "harness_peak_rss_mb": 68.6
+  }
+}

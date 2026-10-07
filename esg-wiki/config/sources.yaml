@@ -1,0 +1,53 @@
+# Source catalog. The files themselves live unchanged in vault/raw/.
+# id        short machine ID used in the retrieval index and note metadata
+# title     readable name used for the source note and in citations
+# short     label used in inline citations ("Briefing p.3")
+# clean     extraction clean-up for that source only (the raw file is never modified)
+
+sources:
+  - id: esg-frameworks-table
+    file: ESG_Frameworks.docx
+    title: ESG Frameworks Comparison
+    short: Comparison table
+    author: Natalie Shutts
+    date: 2024-10-17
+    kind: personal notes (Word table)
+    note: Written in October 2024, before the EU Omnibus changes to CSRD scope.
+
+  - id: novata-esg-guide
+    file: Novata_news.pdf
+    title: Novata ESG Standards and Frameworks Guide
+    short: Novata
+    author: Novata (Learning Hub article)
+    date: 2026-01-09
+    url: https://www.novata.com/esg-standards-frameworks/
+    kind: web article saved as PDF
+    clean:
+      # Browser print header/footer, site navigation, and marketing blocks.
+      drop_line_patterns:
+        - '^\d{1,2}/\d{1,2}/\d{2}, \d{1,2}:\d{2} (AM|PM)$'
+        - '^GRI, SASB, TCFD & More: ESG Standards & Frameworks \| Novata$'
+        - '^https?://'
+        - '^\d+/\d+$'
+        - '^NEW: Scalable sustainability data collection'
+        - '^Updated January 9, 2026$'
+      drop_blocks:
+        # [first line of block, first line after block]  (regexes)
+        - ['^← BACK TO LEARNING HUB$', '^Updated January 9, 2026$']
+        - ['^2025 Novata ESG Metrics Guide$', '^What Are ESG Frameworks\?$']
+        - ['^Report Confidently with Novata$', 'END']   # END = drop to the end of the document
+
+  - id: reporting-briefing
+    file: Global_Sustainability_Reporting_Standards_Executive_Briefing.pdf
+    title: Global Sustainability Reporting Briefing
+    short: Briefing
+    author: Natalie Shutts
+    date: 2026-09-29
+    kind: executive briefing (PDF)
+    clean:
+      drop_line_patterns:
+        - '^Global Sustainability Reporting Standards: Executive Briefing$'   # running header
+        - '^Global Sustainability Reporting Standards:$'                      # title block, page 1
+        - '^Executive Briefing$'
+        - '^Sep 29, 2026'
+        - '^Page \d+ of \d+$'

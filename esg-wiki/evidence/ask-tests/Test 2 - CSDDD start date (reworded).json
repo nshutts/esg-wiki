@@ -1,0 +1,215 @@
+{
+  "mode": "ask",
+  "execution": "local",
+  "network_at_run_time": "offline",
+  "timestamp": "2026-09-29 22:49:05 PDT",
+  "question": "When do the largest European companies have to start checking their supply chains for human rights and environmental harm?",
+  "model": {
+    "name": "gemma4:e2b-it-qat",
+    "digest": "07ea59a47401",
+    "size_gb": 4.34,
+    "family": "gemma4",
+    "parameter_size": "4.6B",
+    "quantization": "Q4_0",
+    "format": "gguf"
+  },
+  "embedding_model": {
+    "name": "embeddinggemma",
+    "digest": "85462619ee72",
+    "size_gb": 0.62,
+    "family": "gemma3",
+    "parameter_size": "307.58M",
+    "quantization": "BF16",
+    "format": "gguf"
+  },
+  "runtime": {
+    "runtime": "Ollama",
+    "version": "0.35.0",
+    "url": "http://127.0.0.1:11434"
+  },
+  "generation_options": {
+    "temperature": 0.0,
+    "num_ctx": 4096,
+    "num_predict": 400
+  },
+  "retrieval": {
+    "method": "hybrid",
+    "top_k": 5,
+    "seconds": 1.91,
+    "notice": "",
+    "passages": [
+      {
+        "id": "reporting-briefing:s09c1",
+        "source_id": "reporting-briefing",
+        "kind": "source",
+        "path": "vault/raw/Global_Sustainability_Reporting_Standards_Executive_Briefing.pdf",
+        "title": "Global Sustainability Reporting Briefing",
+        "section": "7. Corporate Sustainability Due Diligence Directive (CSDDD)",
+        "pages": [
+          3
+        ],
+        "text": "7. Corporate Sustainability Due Diligence Directive (CSDDD). A conduct obligation, not only a disclosure one. Components: Identify, prevent and remediate adverse human rights and environmental impacts in the company's own operations and chain of activities, with a risk-based focus. In scope: EU companies with more than 5,000 employees and EUR 1.5bn net worldwide turnover, and non-EU companies with EUR 1.5bn EU turnover. Compliance is required from 26 July 2029 (Morrison Foerster). Enforcement: National supervisory authorities with administrative fines; the Omnibus narrowed the liability and penalty provisions (Accountancy Europe).",
+        "location": "p.3, \"7. Corporate Sustainability Due Diligence Directive (CSDDD)\"",
+        "score": 0.03279,
+        "bm25_score": 8.31,
+        "bm25_rank": 1,
+        "cosine": 0.5475,
+        "vector_rank": 1
+      },
+      {
+        "id": "esg-frameworks-table:row03",
+        "source_id": "esg-frameworks-table",
+        "kind": "source",
+        "path": "vault/raw/ESG_Frameworks.docx",
+        "title": "ESG Frameworks Comparison",
+        "section": "Table row: CSRD",
+        "pages": [],
+        "text": "Framework/Standard: CSRD. Full Name: Corporate Sustainability Reporting Directive. Focus: Comprehensive sustainability reporting. Scope: EU companies and non-EU companies operating in the EU. Reporting Requirement: Mandatory for large EU companies, phased approach starting in 2024. Alignment with Other Standards: Aligned with European Green Deal, GRI. Industry-Specific Guidance: No, but includes sector-specific indicators. Key Features: Expands on NFRD, integrates double materiality (financial + sustainability impact)",
+        "location": "\"Table row: CSRD\"",
+        "score": 0.03175,
+        "bm25_score": 4.232,
+        "bm25_rank": 3,
+        "cosine": 0.4494,
+        "vector_rank": 3
+      },
+      {
+        "id": "reporting-briefing:s06c1",
+        "source_id": "reporting-briefing",
+        "kind": "source",
+        "path": "vault/raw/Global_Sustainability_Reporting_Standards_Executive_Briefing.pdf",
+        "title": "Global Sustainability Reporting Briefing",
+        "section": "4. Corporate Sustainability Reporting Directive (CSRD) and ESRS",
+        "pages": [
+          2
+        ],
+        "text": "4. Corporate Sustainability Reporting Directive (CSRD) and ESRS. The EU's mandatory sustainability reporting law and its technical standards. Components: Double materiality (impacts on people and planet, plus financial risk); 2 cross-cutting and 10 topical ESRS; mandatory limited assurance; digital tagging, now postponed. Revised ESRS adopted on 3 July 2026 cut mandatory datapoints by over 60% and total datapoints by over 70% (European Commission). In scope: EU companies with more than 1,000 employees and more than EUR 450m net turnover. Non-EU groups are in scope with over EUR 450m EU turnover and an EU subsidiary or branch above EUR 200m (Latham & Watkins). Suppliers under 1,000 employees can decline data requests beyond a voluntary SME standard. Enforcement: Penalties set by each Member State; statutory auditors or accredited assurers sign off; national market regulators supervise listed issuers.",
+        "location": "p.2, \"4. Corporate Sustainability Reporting Directive (CSRD) and ESRS\"",
+        "score": 0.03105,
+        "bm25_score": 2.62,
+        "bm25_rank": 7,
+        "cosine": 0.4901,
+        "vector_rank": 2
+      },
+      {
+        "id": "reporting-briefing:s07c1",
+        "source_id": "reporting-briefing",
+        "kind": "source",
+        "path": "vault/raw/Global_Sustainability_Reporting_Standards_Executive_Briefing.pdf",
+        "title": "Global Sustainability Reporting Briefing",
+        "section": "5. EU Taxonomy Regulation",
+        "pages": [
+          2
+        ],
+        "text": "5. EU Taxonomy Regulation. A classification system defining which economic activities count as environmentally sustainable. Components: Six environmental objectives; an activity is \"aligned\" if it substantially contributes to one, does no significant harm to the others and meets minimum social safeguards. Companies report the share of turnover, CapEx and OpEx that is eligible and aligned. Since January 2026, activities below 10% of a KPI can be excluded from detailed assessment and templates are about 64% shorter (BCLP). In scope: Companies subject to CSRD (Article 8), plus financial market participants through SFDR. Enforcement: Through the CSRD and SFDR supervisory regimes above.",
+        "location": "p.2, \"5. EU Taxonomy Regulation\"",
+        "score": 0.03083,
+        "bm25_score": 6.179,
+        "bm25_rank": 2,
+        "cosine": 0.3569,
+        "vector_rank": 8
+      },
+      {
+        "id": "reporting-briefing:s08c1",
+        "source_id": "reporting-briefing",
+        "kind": "source",
+        "path": "vault/raw/Global_Sustainability_Reporting_Standards_Executive_Briefing.pdf",
+        "title": "Global Sustainability Reporting Briefing",
+        "section": "6. Sustainable Finance Disclosure Regulation (SFDR)",
+        "pages": [
+          2,
+          3
+        ],
+        "text": "6. Sustainable Finance Disclosure Regulation (SFDR). Disclosure rules for asset managers, insurers, pension funds and advisers. Components: Entity-level principal adverse impact statements and product labels under Article 8 (\"promotes\" ESG) and Article 9 (sustainable objective). SFDR 2.0 would replace these with three categories (Sustainable, Transition and ESG Basics), each requiring 70% of assets to meet the category's criteria. The Council agreed its position in June 2026 and Parliament's committee in September 2026; trilogues are expected to start in October (RankiaPro). In scope: Financial market participants and advisers marketing products in the EU, including non-EU managers. Enforcement: National financial regulators, with ESMA coordinating; greenwashing in fund names and marketing is an active enforcement priority.",
+        "location": "pp.2-3, \"6. Sustainable Finance Disclosure Regulation (SFDR)\"",
+        "score": 0.03054,
+        "bm25_score": 3.105,
+        "bm25_rank": 5,
+        "cosine": 0.3668,
+        "vector_rank": 6
+      }
+    ]
+  },
+  "prompt_words": 786,
+  "answer": "The Corporate Sustainability Due Diligence Directive (CSDDD) requires companies to identify, prevent, and remediate adverse human rights and environmental impacts in their own operations and chain of activities, with a risk-based focus [1]. Compliance with the CSDDD is required starting 26 July 2029 [1].",
+  "citation_check": {
+    "status": "cited",
+    "citations_used": [
+      1
+    ],
+    "invalid_citations": [],
+    "uncited_sentences": [],
+    "numbers": [
+      {
+        "number": "26",
+        "in_cited_passages": true,
+        "in_any_retrieved_passage": true
+      },
+      {
+        "number": "2029",
+        "in_cited_passages": true,
+        "in_any_retrieved_passage": true
+      }
+    ],
+    "numbers_not_in_retrieved_passages": [],
+    "cited_sources": [
+      {
+        "n": 1,
+        "passage_id": "reporting-briefing:s09c1",
+        "path": "vault/raw/Global_Sustainability_Reporting_Standards_Executive_Briefing.pdf",
+        "location": "p.3, \"7. Corporate Sustainability Due Diligence Directive (CSDDD)\"",
+        "title": "Global Sustainability Reporting Briefing"
+      }
+    ]
+  },
+  "timing": {
+    "wall_seconds": 6.57,
+    "time_to_first_token_seconds": 4.33,
+    "load_seconds": 0.02,
+    "prompt_tokens": 1223,
+    "prompt_eval_seconds": 4.17,
+    "output_tokens": 67,
+    "output_tokens_per_second": 29.8,
+    "done_reason": "stop"
+  },
+  "memory": {
+    "ollama_loaded_models": [
+      {
+        "model": "gemma4:e2b-it-qat",
+        "loaded_size_gb": 1.66,
+        "in_gpu_memory_gb": 1.66,
+        "context_length": 4096
+      },
+      {
+        "model": "embeddinggemma:latest",
+        "loaded_size_gb": 0.68,
+        "in_gpu_memory_gb": 0.68,
+        "context_length": 2048
+      }
+    ],
+    "harness_peak_rss_mb": 29.5
+  },
+  "test": {
+    "id": 2,
+    "name": "CSDDD start date (reworded)",
+    "type": "answerable question phrased differently from the source",
+    "expected_behavior": "Retrieval should find the CSDDD passage even though the question never says \"CSDDD\" or \"due diligence\". Answer with the 26 July 2029 date and the size thresholds.",
+    "expected_answer": "Under the CSDDD, compliance is required from 26 July 2029 for EU companies with more than 5,000 employees and EUR 1.5bn net worldwide turnover, and non-EU companies with EUR 1.5bn EU turnover.",
+    "expected_sources": [
+      {
+        "file": "vault/raw/Global_Sustainability_Reporting_Standards_Executive_Briefing.pdf",
+        "location": "p.3, section 7 \"Corporate Sustainability Due Diligence Directive (CSDDD)\""
+      }
+    ],
+    "expected_passages": [
+      "reporting-briefing:s09c1"
+    ],
+    "expected_passage_ranks": {
+      "reporting-briefing:s09c1": 1
+    },
+    "retrieval_found_expected": true,
+    "expected_passage_cited": [
+      "reporting-briefing:s09c1"
+    ],
+    "automatic_answer_check": true
+  }
+}

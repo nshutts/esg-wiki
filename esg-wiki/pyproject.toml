@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "esg-wiki"
+version = "1.0.0"
+description = "Personal ESG wiki CLI: local Gemma via Ollama, hybrid retrieval, cited answers, offline."
+requires-python = ">=3.9"
+dependencies = [
+  "numpy>=1.24",
+  "pymupdf>=1.24",
+  "python-docx>=1.1",
+  "pyyaml>=6.0",
+]
+
+[project.scripts]
+wiki = "wikicli.cli:main"
+
+[tool.setuptools]
+packages = ["wikicli"]

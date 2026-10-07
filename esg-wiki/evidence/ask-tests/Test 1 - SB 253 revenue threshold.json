@@ -1,0 +1,212 @@
+{
+  "mode": "ask",
+  "execution": "local",
+  "network_at_run_time": "offline",
+  "timestamp": "2026-09-29 22:48:57 PDT",
+  "question": "What revenue threshold puts a company in scope of California SB 253?",
+  "model": {
+    "name": "gemma4:e2b-it-qat",
+    "digest": "07ea59a47401",
+    "size_gb": 4.34,
+    "family": "gemma4",
+    "parameter_size": "4.6B",
+    "quantization": "Q4_0",
+    "format": "gguf"
+  },
+  "embedding_model": {
+    "name": "embeddinggemma",
+    "digest": "85462619ee72",
+    "size_gb": 0.62,
+    "family": "gemma3",
+    "parameter_size": "307.58M",
+    "quantization": "BF16",
+    "format": "gguf"
+  },
+  "runtime": {
+    "runtime": "Ollama",
+    "version": "0.35.0",
+    "url": "http://127.0.0.1:11434"
+  },
+  "generation_options": {
+    "temperature": 0.0,
+    "num_ctx": 4096,
+    "num_predict": 400
+  },
+  "retrieval": {
+    "method": "hybrid",
+    "top_k": 5,
+    "seconds": 1.37,
+    "notice": "",
+    "passages": [
+      {
+        "id": "reporting-briefing:s11c1",
+        "source_id": "reporting-briefing",
+        "kind": "source",
+        "path": "vault/raw/Global_Sustainability_Reporting_Standards_Executive_Briefing.pdf",
+        "title": "Global Sustainability Reporting Briefing",
+        "section": "8. California SB 253 and SB 261",
+        "pages": [
+          3,
+          4
+        ],
+        "text": "8. California SB 253 and SB 261. Two companion laws administered by the California Air Resources Board (CARB). Components: SB 253 (Climate Corporate Data Accountability Act) requires annual Scope 1 and 2 emissions reporting from 2026 and Scope 3 from 2027, measured under the GHG Protocol, with third-party assurance phasing from limited to reasonable. SB 261 (Climate-Related Financial Risk Act) requires a biennial public report on climate-related financial risk and mitigation, which may follow TCFD or ISSB. In scope: US-organized entities doing business in California with total annual revenue above $1bn (SB 253) or above $500m (SB 261), public or private, measured globally (Persefoni). Status: CARB moved the first SB 253 deadline from 10 August to 10 November 2026 and will not require assurance on that first report (Baker Tilly). A Ninth Circuit injunction has paused SB 261 enforcement since November 2025; a ruling on the First Amendment challenge was still pending as of August 2026. Enforcement: CARB administrative penalties of up to $500,000 per reporting year under SB 253 and up to $50,000 under SB 261. Scope 3 misstatements are protected by a safe harbor if made in good faith, and penalties for Scope 3 are limited to non-filing until 2030.",
+        "location": "pp.3-4, \"8. California SB 253 and SB 261\"",
+        "score": 0.03279,
+        "bm25_score": 14.425,
+        "bm25_rank": 1,
+        "cosine": 0.5978,
+        "vector_rank": 1
+      },
+      {
+        "id": "reporting-briefing:s04c1",
+        "source_id": "reporting-briefing",
+        "kind": "source",
+        "path": "vault/raw/Global_Sustainability_Reporting_Standards_Executive_Briefing.pdf",
+        "title": "Global Sustainability Reporting Briefing",
+        "section": "3. GHG Protocol",
+        "pages": [
+          1,
+          2
+        ],
+        "text": "3. GHG Protocol. The accounting rulebook for emissions that every regime in this briefing relies on. Components: Corporate Standard, Scope 2 Guidance (location- and market-based methods) and Scope 3 Standard (15 value chain categories). A revision under consultation would require hourly and regional matching of renewable energy certificates for market-based Scope 2 claims, with a final standard expected in 2027 and implementation likely from 2028 (Greenplaces). In scope: Voluntary; referenced directly by California SB 253, ISSB, AASB S2 and ESRS. Enforcement: None of its own; errors are penalized through the laws that reference it.",
+        "location": "pp.1-2, \"3. GHG Protocol\"",
+        "score": 0.032,
+        "bm25_score": 7.916,
+        "bm25_rank": 2,
+        "cosine": 0.3348,
+        "vector_rank": 3
+      },
+      {
+        "id": "reporting-briefing:s09c1",
+        "source_id": "reporting-briefing",
+        "kind": "source",
+        "path": "vault/raw/Global_Sustainability_Reporting_Standards_Executive_Briefing.pdf",
+        "title": "Global Sustainability Reporting Briefing",
+        "section": "7. Corporate Sustainability Due Diligence Directive (CSDDD)",
+        "pages": [
+          3
+        ],
+        "text": "7. Corporate Sustainability Due Diligence Directive (CSDDD). A conduct obligation, not only a disclosure one. Components: Identify, prevent and remediate adverse human rights and environmental impacts in the company's own operations and chain of activities, with a risk-based focus. In scope: EU companies with more than 5,000 employees and EUR 1.5bn net worldwide turnover, and non-EU companies with EUR 1.5bn EU turnover. Compliance is required from 26 July 2029 (Morrison Foerster). Enforcement: National supervisory authorities with administrative fines; the Omnibus narrowed the liability and penalty provisions (Accountancy Europe).",
+        "location": "p.3, \"7. Corporate Sustainability Due Diligence Directive (CSDDD)\"",
+        "score": 0.03054,
+        "bm25_score": 3.096,
+        "bm25_rank": 5,
+        "cosine": 0.3027,
+        "vector_rank": 6
+      },
+      {
+        "id": "reporting-briefing:s12c1",
+        "source_id": "reporting-briefing",
+        "kind": "source",
+        "path": "vault/raw/Global_Sustainability_Reporting_Standards_Executive_Briefing.pdf",
+        "title": "Global Sustainability Reporting Briefing",
+        "section": "9. Australian Sustainability Reporting Standards (AASB S2)",
+        "pages": [
+          4
+        ],
+        "text": "9. Australian Sustainability Reporting Standards (AASB S2). Mandatory climate reporting under Chapter 2M of the Corporations Act 2001, based on IFRS S2. Components: A sustainability report lodged with the annual report, covering governance, strategy, risk management and metrics; Scope 1 and 2 emissions from year one and Scope 3 from year two; scenario analysis at 1.5°C and at 2.5°C or higher; a directors' declaration; assurance phasing from limited to reasonable. AASB S1 (general sustainability) is voluntary. In scope: Entities that lodge annual reports and meet two of three size tests, phased by group. Group 1 began with years starting 1 January 2025 (revenue A$500m, assets A$1bn, 500 employees). Group 2 began with years starting 1 July 2026 (A$200m, A$500m, 250 employees). Group 3 follows from 1 July 2027 (A$50m, A$25m, 100 employees) (Carbon Impact). Large emitters under the National Greenhouse and Energy Reporting Act and large asset owners are also caught. Enforcement: ASIC, under the same civil penalty and director liability provisions as financial reports. A three-year \"modified liability\" period limits claims over Scope 3, scenario analysis and transition plans to ASIC-only actions (Naturaliste).",
+        "location": "p.4, \"9. Australian Sustainability Reporting Standards (AASB S2)\"",
+        "score": 0.03054,
+        "bm25_score": 2.999,
+        "bm25_rank": 6,
+        "cosine": 0.3084,
+        "vector_rank": 5
+      },
+      {
+        "id": "reporting-briefing:s06c1",
+        "source_id": "reporting-briefing",
+        "kind": "source",
+        "path": "vault/raw/Global_Sustainability_Reporting_Standards_Executive_Briefing.pdf",
+        "title": "Global Sustainability Reporting Briefing",
+        "section": "4. Corporate Sustainability Reporting Directive (CSRD) and ESRS",
+        "pages": [
+          2
+        ],
+        "text": "4. Corporate Sustainability Reporting Directive (CSRD) and ESRS. The EU's mandatory sustainability reporting law and its technical standards. Components: Double materiality (impacts on people and planet, plus financial risk); 2 cross-cutting and 10 topical ESRS; mandatory limited assurance; digital tagging, now postponed. Revised ESRS adopted on 3 July 2026 cut mandatory datapoints by over 60% and total datapoints by over 70% (European Commission). In scope: EU companies with more than 1,000 employees and more than EUR 450m net turnover. Non-EU groups are in scope with over EUR 450m EU turnover and an EU subsidiary or branch above EUR 200m (Latham & Watkins). Suppliers under 1,000 employees can decline data requests beyond a voluntary SME standard. Enforcement: Penalties set by each Member State; statutory auditors or accredited assurers sign off; national market regulators supervise listed issuers.",
+        "location": "p.2, \"4. Corporate Sustainability Reporting Directive (CSRD) and ESRS\"",
+        "score": 0.03002,
+        "bm25_score": 0.873,
+        "bm25_rank": 12,
+        "cosine": 0.3461,
+        "vector_rank": 2
+      }
+    ]
+  },
+  "prompt_words": 989,
+  "answer": "US-organized entities doing business in California with total annual revenue above $1bn are in scope for SB 253 [1].",
+  "citation_check": {
+    "status": "cited",
+    "citations_used": [
+      1
+    ],
+    "invalid_citations": [],
+    "uncited_sentences": [],
+    "numbers": [
+      {
+        "number": "$1bn",
+        "in_cited_passages": true,
+        "in_any_retrieved_passage": true
+      },
+      {
+        "number": "253",
+        "in_cited_passages": true,
+        "in_any_retrieved_passage": true
+      }
+    ],
+    "numbers_not_in_retrieved_passages": [],
+    "cited_sources": [
+      {
+        "n": 1,
+        "passage_id": "reporting-briefing:s11c1",
+        "path": "vault/raw/Global_Sustainability_Reporting_Standards_Executive_Briefing.pdf",
+        "location": "pp.3-4, \"8. California SB 253 and SB 261\"",
+        "title": "Global Sustainability Reporting Briefing"
+      }
+    ]
+  },
+  "timing": {
+    "wall_seconds": 16.14,
+    "time_to_first_token_seconds": 15.24,
+    "load_seconds": 8.95,
+    "prompt_tokens": 1612,
+    "prompt_eval_seconds": 6.09,
+    "output_tokens": 29,
+    "output_tokens_per_second": 32.0,
+    "done_reason": "stop"
+  },
+  "memory": {
+    "ollama_loaded_models": [
+      {
+        "model": "gemma4:e2b-it-qat",
+        "loaded_size_gb": 1.66,
+        "in_gpu_memory_gb": 1.66,
+        "context_length": 4096
+      }
+    ],
+    "harness_peak_rss_mb": 29.5
+  },
+  "test": {
+    "id": 1,
+    "name": "SB 253 revenue threshold",
+    "type": "direct question answered by one source",
+    "expected_behavior": "Answer with the SB 253 threshold and cite the briefing.",
+    "expected_answer": "US-organized entities doing business in California with total annual revenue above $1bn, measured globally (SB 261 uses $500m).",
+    "expected_sources": [
+      {
+        "file": "vault/raw/Global_Sustainability_Reporting_Standards_Executive_Briefing.pdf",
+        "location": "pp.3-4, section 8 \"California SB 253 and SB 261\", In scope paragraph"
+      }
+    ],
+    "expected_passages": [
+      "reporting-briefing:s11c1"
+    ],
+    "expected_passage_ranks": {
+      "reporting-briefing:s11c1": 1
+    },
+    "retrieval_found_expected": true,
+    "expected_passage_cited": [
+      "reporting-briefing:s11c1"
+    ],
+    "automatic_answer_check": true
+  }
+}

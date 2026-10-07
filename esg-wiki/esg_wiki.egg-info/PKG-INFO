@@ -1,0 +1,9 @@
+Metadata-Version: 2.4
+Name: esg-wiki
+Version: 1.0.0
+Summary: Personal ESG wiki CLI: local Gemma via Ollama, hybrid retrieval, cited answers, offline.
+Requires-Python: >=3.9
+Requires-Dist: numpy>=1.24
+Requires-Dist: pymupdf>=1.24
+Requires-Dist: python-docx>=1.1
+Requires-Dist: pyyaml>=6.0

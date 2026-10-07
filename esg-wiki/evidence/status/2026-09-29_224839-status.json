@@ -1,0 +1,38 @@
+{
+  "timestamp": "2026-09-29 22:48:39 PDT",
+  "network": "offline",
+  "device": {
+    "os": "macOS 26.5.2",
+    "machine": "arm64",
+    "python": "3.9.6",
+    "chip": "Apple M1",
+    "total_memory_gb": 8.0,
+    "memory_type": "unified (CPU and GPU share it)",
+    "available_memory_gb_approx": 2.1,
+    "free_disk_gb": 12.7
+  },
+  "runtime": {
+    "runtime": "Ollama",
+    "version": "0.35.0",
+    "url": "http://127.0.0.1:11434"
+  },
+  "generator": {
+    "name": "gemma4:e2b-it-qat",
+    "digest": "07ea59a47401",
+    "size_gb": 4.34,
+    "family": "gemma4",
+    "parameter_size": "4.6B",
+    "quantization": "Q4_0",
+    "format": "gguf"
+  },
+  "embedder": {
+    "name": "embeddinggemma",
+    "digest": "85462619ee72",
+    "size_gb": 0.62,
+    "family": "gemma3",
+    "parameter_size": "307.58M",
+    "quantization": "BF16",
+    "format": "gguf"
+  },
+  "loaded": []
+}

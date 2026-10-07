@@ -1,0 +1,217 @@
+{
+  "mode": "ask",
+  "execution": "local",
+  "network_at_run_time": "offline",
+  "timestamp": "2026-09-29 22:49:13 PDT",
+  "question": "What happened to the TCFD, and where do its recommendations live on today?",
+  "model": {
+    "name": "gemma4:e2b-it-qat",
+    "digest": "07ea59a47401",
+    "size_gb": 4.34,
+    "family": "gemma4",
+    "parameter_size": "4.6B",
+    "quantization": "Q4_0",
+    "format": "gguf"
+  },
+  "embedding_model": {
+    "name": "embeddinggemma",
+    "digest": "85462619ee72",
+    "size_gb": 0.62,
+    "family": "gemma3",
+    "parameter_size": "307.58M",
+    "quantization": "BF16",
+    "format": "gguf"
+  },
+  "runtime": {
+    "runtime": "Ollama",
+    "version": "0.35.0",
+    "url": "http://127.0.0.1:11434"
+  },
+  "generation_options": {
+    "temperature": 0.0,
+    "num_ctx": 4096,
+    "num_predict": 400
+  },
+  "retrieval": {
+    "method": "hybrid",
+    "top_k": 5,
+    "seconds": 0.08,
+    "notice": "",
+    "passages": [
+      {
+        "id": "novata-esg-guide:s09c1",
+        "source_id": "novata-esg-guide",
+        "kind": "source",
+        "path": "vault/raw/Novata_news.pdf",
+        "title": "Novata ESG Standards and Frameworks Guide",
+        "section": "TCFD",
+        "pages": [
+          3,
+          4
+        ],
+        "text": "The Task Force for Climate-Related Disclosures (TCFD), established by the Financial Stability Board in 2015, was developed to guide disclosure recommendations for climate-related financial information. It enables companies to be more transparent on their climate-related risk exposures to investors, lenders and insurance underwriters. The TCFD is comprised of 11 recommendations structured around four pillars: governance, strategy, risk management, and metrics/targets. While the TCFD disbanded in October 2023, the IFRS foundation officially incorporated the full TCFD recommendations in its publication of IFRS S1 and S2 standards. TCFD as a framework continues to be the blueprint for many emerging frameworks and regulations, including California’s SB 261. TCFD-aligned disclosures are now mandatory in many jurisdictions globally, including the UK, Japan, and New Zealand.",
+        "location": "pp.3-4, \"TCFD\"",
+        "score": 0.03279,
+        "bm25_score": 7.108,
+        "bm25_rank": 1,
+        "cosine": 0.6362,
+        "vector_rank": 1
+      },
+      {
+        "id": "esg-frameworks-table:row04",
+        "source_id": "esg-frameworks-table",
+        "kind": "source",
+        "path": "vault/raw/ESG_Frameworks.docx",
+        "title": "ESG Frameworks Comparison",
+        "section": "Table row: TCFD",
+        "pages": [],
+        "text": "Framework/Standard: TCFD. Full Name: Task Force on Climate-related Financial Disclosures. Focus: Climate-related financial risk. Scope: Global. Reporting Requirement: Voluntary, but increasingly adopted in mandatory disclosure regimes. Alignment with Other Standards: Aligned with SASB, CDP, GRI. Industry-Specific Guidance: No, general recommendations for all sectors. Key Features: Emphasizes financial impact of climate risks, scenario analysis",
+        "location": "\"Table row: TCFD\"",
+        "score": 0.03226,
+        "bm25_score": 5.344,
+        "bm25_rank": 2,
+        "cosine": 0.5708,
+        "vector_rank": 2
+      },
+      {
+        "id": "esg-frameworks-table:row06",
+        "source_id": "esg-frameworks-table",
+        "kind": "source",
+        "path": "vault/raw/ESG_Frameworks.docx",
+        "title": "ESG Frameworks Comparison",
+        "section": "Table row: CDP",
+        "pages": [],
+        "text": "Framework/Standard: CDP. Full Name: Carbon Disclosure Project. Focus: Environmental impact, particularly carbon emissions. Scope: Global. Reporting Requirement: Voluntary, but used by investors and governments. Alignment with Other Standards: Aligned with SBTi, TCFD, GRI. Industry-Specific Guidance: No, broad coverage across sectors. Key Features: Focuses on environmental disclosures, especially climate and water security",
+        "location": "\"Table row: CDP\"",
+        "score": 0.0315,
+        "bm25_score": 1.589,
+        "bm25_rank": 3,
+        "cosine": 0.3345,
+        "vector_rank": 4
+      },
+      {
+        "id": "esg-frameworks-table:row08",
+        "source_id": "esg-frameworks-table",
+        "kind": "source",
+        "path": "vault/raw/ESG_Frameworks.docx",
+        "title": "ESG Frameworks Comparison",
+        "section": "Table row: NFRD",
+        "pages": [],
+        "text": "Framework/Standard: NFRD. Full Name: Non-Financial Reporting Directive. Focus: Sustainability-related disclosures for large companies. Scope: EU. Reporting Requirement: Mandatory for large EU public-interest entities. Alignment with Other Standards: Aligned with GRI, TCFD. Industry-Specific Guidance: No, broad applicability across sectors. Key Features: Predecessor to CSRD, focuses on non-financial reporting requirements in the EU",
+        "location": "\"Table row: NFRD\"",
+        "score": 0.0315,
+        "bm25_score": 1.566,
+        "bm25_rank": 4,
+        "cosine": 0.3545,
+        "vector_rank": 3
+      },
+      {
+        "id": "novata-esg-guide:s07c1",
+        "source_id": "novata-esg-guide",
+        "kind": "source",
+        "path": "vault/raw/Novata_news.pdf",
+        "title": "Novata ESG Standards and Frameworks Guide",
+        "section": "What Are ESG Frameworks?",
+        "pages": [
+          3
+        ],
+        "text": "ESG frameworks provide a broad, contextual approach to ESG reporting. Rather than prescribing specific metrics, frameworks define the themes, objectives, and scope of sustainability reporting, guiding companies on what topics to address, the data to collect, and how reporting should be presented. ESG frameworks are largely voluntary, and widely accepted frameworks include the Task Force on Climate-Related Financial Disclosure (TCFD), the Carbon Disclosure Project (CDP), or the UN’s Sustainable Development Goals (SDGs).",
+        "location": "p.3, \"What Are ESG Frameworks?\"",
+        "score": 0.02941,
+        "bm25_score": 1.51,
+        "bm25_rank": 8,
+        "cosine": 0.2957,
+        "vector_rank": 8
+      }
+    ]
+  },
+  "prompt_words": 614,
+  "answer": "The Task Force for Climate-Related Disclosures (TCFD) disbanded in October 2023 [1]. The IFRS foundation officially incorporated the full TCFD recommendations in its publication of IFRS S1 and S2 standards [1]. TCFD as a framework continues to be the blueprint for many emerging frameworks and regulations, including California’s SB 261 [1]. TCFD-aligned disclosures are now mandatory in many jurisdictions globally, such as the UK, Japan, and New Zealand [1].",
+  "citation_check": {
+    "status": "cited",
+    "citations_used": [
+      1
+    ],
+    "invalid_citations": [],
+    "uncited_sentences": [],
+    "numbers": [
+      {
+        "number": "2023",
+        "in_cited_passages": true,
+        "in_any_retrieved_passage": true
+      },
+      {
+        "number": "261",
+        "in_cited_passages": true,
+        "in_any_retrieved_passage": true
+      }
+    ],
+    "numbers_not_in_retrieved_passages": [],
+    "cited_sources": [
+      {
+        "n": 1,
+        "passage_id": "novata-esg-guide:s09c1",
+        "path": "vault/raw/Novata_news.pdf",
+        "location": "pp.3-4, \"TCFD\"",
+        "title": "Novata ESG Standards and Frameworks Guide"
+      }
+    ]
+  },
+  "timing": {
+    "wall_seconds": 7.31,
+    "time_to_first_token_seconds": 3.5,
+    "load_seconds": 0.01,
+    "prompt_tokens": 969,
+    "prompt_eval_seconds": 3.38,
+    "output_tokens": 109,
+    "output_tokens_per_second": 28.5,
+    "done_reason": "stop"
+  },
+  "memory": {
+    "ollama_loaded_models": [
+      {
+        "model": "gemma4:e2b-it-qat",
+        "loaded_size_gb": 1.66,
+        "in_gpu_memory_gb": 1.66,
+        "context_length": 4096
+      },
+      {
+        "model": "embeddinggemma:latest",
+        "loaded_size_gb": 0.68,
+        "in_gpu_memory_gb": 0.68,
+        "context_length": 2048
+      }
+    ],
+    "harness_peak_rss_mb": 29.5
+  },
+  "test": {
+    "id": 3,
+    "name": "What happened to TCFD",
+    "type": "question that connects two sources",
+    "expected_behavior": "Combine the Novata article and the briefing, citing both.",
+    "expected_answer": "The TCFD disbanded in October 2023; the IFRS Foundation incorporated its recommendations into IFRS S1 and S2, which use the four TCFD pillars. SB 261 reports may follow TCFD or ISSB, and TCFD-aligned disclosures are mandatory in jurisdictions such as the UK, Japan and New Zealand.",
+    "expected_sources": [
+      {
+        "file": "vault/raw/Novata_news.pdf",
+        "location": "pp.3-4, section \"TCFD\""
+      },
+      {
+        "file": "vault/raw/Global_Sustainability_Reporting_Standards_Executive_Briefing.pdf",
+        "location": "p.1, section 1 \"ISSB Standards (IFRS S1 and S2)\"; pp.3-4, section 8 (SB 261)"
+      }
+    ],
+    "expected_passages": [
+      "novata-esg-guide:s09c1",
+      "reporting-briefing:s02c1"
+    ],
+    "expected_passage_ranks": {
+      "novata-esg-guide:s09c1": 1,
+      "reporting-briefing:s02c1": null
+    },
+    "retrieval_found_expected": false,
+    "expected_passage_cited": [
+      "novata-esg-guide:s09c1"
+    ],
+    "automatic_answer_check": true
+  }
+}

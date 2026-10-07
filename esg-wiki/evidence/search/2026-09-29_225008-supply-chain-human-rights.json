@@ -1,0 +1,105 @@
+{
+  "mode": "search",
+  "execution": "local",
+  "network_at_run_time": "offline",
+  "timestamp": "2026-09-29 22:50:08 PDT",
+  "query": "supply chain human rights",
+  "method": "hybrid",
+  "notice": "",
+  "seconds": 0.082,
+  "results": [
+    {
+      "id": "reporting-briefing:s09c1",
+      "source_id": "reporting-briefing",
+      "kind": "source",
+      "path": "vault/raw/Global_Sustainability_Reporting_Standards_Executive_Briefing.pdf",
+      "title": "Global Sustainability Reporting Briefing",
+      "section": "7. Corporate Sustainability Due Diligence Directive (CSDDD)",
+      "pages": [
+        3
+      ],
+      "text": "7. Corporate Sustainability Due Diligence Directive (CSDDD). A conduct obligation, not only a disclosure one. Components: Identify, prevent and remediate adverse human rights and environmental impacts in the company's own operations and chain of activities, with a risk-based focus. In scope: EU companies with more than 5,000 employees and EUR 1.5bn net worldwide turnover, and non-EU companies with EUR 1.5bn EU turnover. Compliance is required from 26 July 2029 (Morrison Foerster). Enforcement: National supervisory authorities with administrative fines; the Omnibus narrowed the liability and penalty provisions (Accountancy Europe).",
+      "location": "p.3, \"7. Corporate Sustainability Due Diligence Directive (CSDDD)\"",
+      "score": 0.03279,
+      "bm25_score": 7.716,
+      "bm25_rank": 1,
+      "cosine": 0.3299,
+      "vector_rank": 1
+    },
+    {
+      "id": "reporting-briefing:s13c1",
+      "source_id": "reporting-briefing",
+      "kind": "source",
+      "path": "vault/raw/Global_Sustainability_Reporting_Standards_Executive_Briefing.pdf",
+      "title": "Global Sustainability Reporting Briefing",
+      "section": "10. Business Responsibility and Sustainability Report (BRSR) and BRSR Core",
+      "pages": [
+        4,
+        5
+      ],
+      "text": "10. Business Responsibility and Sustainability Report (BRSR) and BRSR Core. India's mandatory ESG report, set by the Securities and Exchange Board of India (SEBI). Components: Full BRSR covers the nine principles of India's National Guidelines on Responsible Business Conduct, from environment to employee welfare to consumer fairness. BRSR Core is a subset of nine attributes (including GHG emissions, water, energy, waste, gender diversity and workforce safety) that must be independently assessed or assured. In scope: The top 1,000 listed companies by market capitalization file the full BRSR. BRSR Core assessment or assurance extends to all 1,000 from FY 2026-27. Value chain disclosures for the top 250 are voluntary from FY 2025-26 after SEBI's March 2025 deferral (Sustainability 101). Enforcement: A listing obligation under SEBI's LODR Regulation 34(2)(f), filed with the annual report; SEBI and the stock exchanges can impose fines and other actions for non-compliance or misstatement.",
+      "location": "pp.4-5, \"10. Business Responsibility and Sustainability Report (BRSR) and BRSR Core\"",
+      "score": 0.03078,
+      "bm25_score": 1.543,
+      "bm25_rank": 4,
+      "cosine": 0.2347,
+      "vector_rank": 6
+    },
+    {
+      "id": "novata-esg-guide:s05c1",
+      "source_id": "novata-esg-guide",
+      "kind": "source",
+      "path": "vault/raw/Novata_news.pdf",
+      "title": "Novata ESG Standards and Frameworks Guide",
+      "section": "VSME",
+      "pages": [
+        2,
+        3
+      ],
+      "text": "The Voluntary Sustainability Reporting Standard for non-listed SMEs (VSME) offers a streamlined, accessible alternative to the ESRS, helping small and medium-sized enterprises report on sustainability performance in a way that is proportionate to their business needs. The VSME helps SMEs respond to ESG demands from investors and corporate partners in their value chain, improving risk management and access to capital. With Basic and Comprehensive modules, companies have the flexibility to report based on what’s relevant and their reporting readiness. Aligned with the EU Omnibus I proposal and its “value chain cap” on sustainability data requests, the VSME enables SMEs to demonstrate resilience, manage climate risks, and prepare for evolving regulations.",
+      "location": "pp.2-3, \"VSME\"",
+      "score": 0.03021,
+      "bm25_score": 2.916,
+      "bm25_rank": 2,
+      "cosine": 0.2216,
+      "vector_rank": 11
+    },
+    {
+      "id": "reporting-briefing:s04c1",
+      "source_id": "reporting-briefing",
+      "kind": "source",
+      "path": "vault/raw/Global_Sustainability_Reporting_Standards_Executive_Briefing.pdf",
+      "title": "Global Sustainability Reporting Briefing",
+      "section": "3. GHG Protocol",
+      "pages": [
+        1,
+        2
+      ],
+      "text": "3. GHG Protocol. The accounting rulebook for emissions that every regime in this briefing relies on. Components: Corporate Standard, Scope 2 Guidance (location- and market-based methods) and Scope 3 Standard (15 value chain categories). A revision under consultation would require hourly and regional matching of renewable energy certificates for market-based Scope 2 claims, with a final standard expected in 2027 and implementation likely from 2028 (Greenplaces). In scope: Voluntary; referenced directly by California SB 253, ISSB, AASB S2 and ESRS. Enforcement: None of its own; errors are penalized through the laws that reference it.",
+      "location": "pp.1-2, \"3. GHG Protocol\"",
+      "score": 0.02957,
+      "bm25_score": 2.052,
+      "bm25_rank": 3,
+      "cosine": 0.2081,
+      "vector_rank": 13
+    },
+    {
+      "id": "reporting-briefing:s03c1",
+      "source_id": "reporting-briefing",
+      "kind": "source",
+      "path": "vault/raw/Global_Sustainability_Reporting_Standards_Executive_Briefing.pdf",
+      "title": "Global Sustainability Reporting Briefing",
+      "section": "2. GRI Standards",
+      "pages": [
+        1
+      ],
+      "text": "2. GRI Standards. The most widely used impact-focused framework, aimed at all stakeholders rather than only investors. Components: Universal Standards (GRI 1 to 3), 30+ topic standards and sector standards, built on impact materiality. New GRI 102 (Climate Change) and GRI 103 (Energy) apply to reports published from 1 January 2027, adding transition plan, just transition and carbon credit disclosures (GRI). In scope: Voluntary for any organization of any size or sector. Enforcement: None. Claiming \"in accordance with GRI\" requires a content index and notification to GRI; ESRS is designed to be interoperable with it.",
+      "location": "p.1, \"2. GRI Standards\"",
+      "score": 0.01613,
+      "bm25_score": 0.0,
+      "bm25_rank": null,
+      "cosine": 0.273,
+      "vector_rank": 2
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+[1m[7m%[27m[1m[0m                                                                                                                        ]7;file://Natalies-MacBook-Air-M1.local/Users/natalieshutts/esg-wiki[0m[27m[24m[Jnatalieshutts@Natalies-MacBook-Air-M1 esg-wiki % [K[?2004hwwhat can you help wit   e me with? / [?2004l
+zsh: no matches found: with?
+[1m[7m%[27m[1m[0m                                                                                                                        ]7;file://Natalies-MacBook-Air-M1.local/Users/natalieshutts/esg-wiki[0m[27m[24m[Jnatalieshutts@Natalies-MacBook-Air-M1 esg-wiki % [K[?2004h//exit[?2004l
+zsh: no such file or directory: /exit
+[1m[7m%[27m[1m[0m                                                                                                                        ]7;file://Natalies-MacBook-Air-M1.local/Users/natalieshutts/esg-wiki[0m[27m[24m[Jnatalieshutts@Natalies-MacBook-Air-M1 esg-wiki % [K[?2004h

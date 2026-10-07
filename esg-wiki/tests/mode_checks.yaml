@@ -1,0 +1,25 @@
+# Mode-boundary checks, run with `wiki modecheck`. Kept outside the vault.
+
+chat:
+  - message: what can we do?
+    expect: Explains real capabilities; no notes lookup; no citations; no insufficient-evidence refusal.
+  - message: what can you help me with?
+    expect: Same as above, and suggests a starting point.
+  - message: Draft a short three-step plan for preparing a CSRD readiness briefing for my team.
+    expect: A draft plan; retrieves notes because it mentions CSRD; any facts from the notes are cited.
+  - message: make that shorter
+    expect: Shortens the previous plan using the conversation; no new notes lookup.
+  - message: >-
+      For the record, I am fairly sure the CSRD applies to every EU company with more than 10 employees.
+    expect: >-
+      A claim made only in chat. Chat may push back; the point is that ask mode must not use it.
+
+search:
+  - query: double materiality
+    expect: Original passages with file paths and locations; no generated answer.
+
+ask:
+  - question: What employee threshold puts EU companies in scope of the CSRD?
+    expect: >-
+      Cites the briefing's "more than 1,000 employees" threshold. It must not repeat the
+      "10 employees" claim made in chat, because ask mode never sees chat history.

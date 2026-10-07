@@ -1,0 +1,251 @@
+# Wiki topic map (human-curated structure; Gemma writes the note content).
+#
+# Each topic becomes one note: vault/wiki/<folder>/<name>.md. The filename is the
+# readable subject name, so re-ingesting always updates the same file and never
+# creates a duplicate.
+#   id          stable machine ID, stored in the note's properties
+#   terms       phrases used to (a) pick evidence passages for the note and
+#               (b) tell chat mode that a message is about the notes
+#   related     links written into "Related notes", each with the reason it matters.
+#               Reasons are written from the sources and checked by hand.
+
+folders:
+  - name: Frameworks and Standards
+    blurb: Voluntary global baselines that most mandatory regimes build on.
+  - name: Europe
+    blurb: EU laws and the standards that implement them.
+  - name: United States
+    blurb: Federal and California climate disclosure rules.
+  - name: Other Jurisdictions
+    blurb: Mandatory regimes outside the US and EU that appear in the sources.
+  - name: Concepts
+    blurb: Ideas that cut across frameworks and regulations.
+
+topics:
+  # ---------------- Frameworks and Standards ----------------
+  - id: issb
+    name: ISSB Standards
+    folder: Frameworks and Standards
+    description: IFRS S1 and S2, the investor-focused global baseline.
+    terms: [ISSB, IFRS S1, IFRS S2, International Sustainability Standards Board, IFRS Sustainability Disclosure Standards]
+    related:
+      - [TCFD, "IFRS S1 and S2 use the four TCFD pillars and absorbed the TCFD recommendations after it disbanded."]
+      - [SASB Standards, "SASB is part of the IFRS Foundation, and the ISSB builds on its industry-specific approach."]
+      - [Double Materiality, "The ISSB applies a financial materiality lens, while CSRD requires double materiality."]
+      - [Australia AASB S2, "Australia's mandatory climate standard is based on IFRS S2."]
+      - [California SB 253 and SB 261, "SB 261 climate risk reports may follow TCFD or ISSB."]
+
+  - id: gri
+    name: GRI Standards
+    folder: Frameworks and Standards
+    description: The most widely used impact-focused reporting standards.
+    terms: [GRI, Global Reporting Initiative, GRI 102, GRI 103]
+    related:
+      - [Double Materiality, "GRI is built on impact materiality, the 'impact' half of double materiality."]
+      - [CSRD and ESRS, "ESRS is designed to be interoperable with GRI."]
+      - [UN Sustainable Development Goals, "The comparison table lists GRI as aligned with the UN SDGs."]
+      - [Standards vs Frameworks, "Novata uses GRI as an example of a standard rather than a framework."]
+
+  - id: sasb
+    name: SASB Standards
+    folder: Frameworks and Standards
+    description: Industry-specific, financially material disclosure standards for 77 industries.
+    terms: [SASB, Sustainability Accounting Standards Board]
+    related:
+      - [ISSB Standards, "SASB sits within the IFRS Foundation and underpins the ISSB's industry-specific approach."]
+      - [Double Materiality, "SASB focuses on financially material issues, one side of double materiality."]
+
+  - id: tcfd
+    name: TCFD
+    folder: Frameworks and Standards
+    description: Climate-related financial disclosure recommendations, now carried by the ISSB.
+    terms: [TCFD, Task Force on Climate, Task Force for Climate]
+    related:
+      - [ISSB Standards, "The IFRS Foundation incorporated the full TCFD recommendations into IFRS S1 and S2."]
+      - [California SB 253 and SB 261, "TCFD is a blueprint for California's SB 261."]
+      - [Standards vs Frameworks, "Novata uses TCFD as its main example of a framework."]
+      - [CDP, "The comparison table lists TCFD and CDP as aligned."]
+
+  - id: cdp
+    name: CDP
+    folder: Frameworks and Standards
+    description: Global environmental disclosure system, formerly the Carbon Disclosure Project.
+    terms: [CDP, Carbon Disclosure Project]
+    related:
+      - [SBTi, "The comparison table lists CDP and SBTi as aligned."]
+      - [TCFD, "The comparison table lists CDP and TCFD as aligned."]
+
+  - id: sbti
+    name: SBTi
+    folder: Frameworks and Standards
+    description: Science-based corporate emissions reduction targets.
+    terms: [SBTi, Science-Based Targets, Science Based Targets]
+    related:
+      - [CDP, "The comparison table lists SBTi as aligned with CDP."]
+      - [Scope 1 2 and 3 Emissions, "SBTi targets are emissions reduction targets."]
+
+  - id: ghg-protocol
+    name: GHG Protocol
+    folder: Frameworks and Standards
+    description: The emissions accounting rulebook every regime in the sources relies on.
+    terms: [GHG Protocol, Scope 2 Guidance, Scope 3 Standard, Corporate Standard]
+    related:
+      - [Scope 1 2 and 3 Emissions, "The GHG Protocol defines how Scope 1, 2 and 3 emissions are measured."]
+      - [California SB 253 and SB 261, "SB 253 requires emissions to be measured under the GHG Protocol."]
+      - [ISSB Standards, "The briefing lists ISSB among the regimes that reference the GHG Protocol."]
+
+  - id: sdgs
+    name: UN Sustainable Development Goals
+    folder: Frameworks and Standards
+    description: 17 global goals used as a high-level framework for strategy.
+    terms: [SDGs, Sustainable Development Goals]
+    related:
+      - [GRI Standards, "The comparison table lists GRI as aligned with the SDGs."]
+      - [Standards vs Frameworks, "Novata lists the SDGs as a framework."]
+
+  - id: private-markets
+    name: Private Markets ESG Frameworks
+    folder: Frameworks and Standards
+    description: Invest Europe and EDCI, frameworks built for private equity and venture capital.
+    terms: [Invest Europe, EDCI, ESG Data Convergence Initiative]
+    related:
+      - [Standards vs Frameworks, "Novata presents both as examples of ESG frameworks."]
+
+  # ---------------- Europe ----------------
+  - id: csrd
+    name: CSRD and ESRS
+    folder: Europe
+    description: The EU's mandatory sustainability reporting law and its technical standards.
+    terms: [CSRD, ESRS, Corporate Sustainability Reporting Directive]
+    related:
+      - [Double Materiality, "CSRD requires double materiality."]
+      - [NFRD, "CSRD replaced and expanded the NFRD."]
+      - [Omnibus I Directive, "The Omnibus cut the number of companies in CSRD scope by roughly 80%."]
+      - [EU Taxonomy, "Companies subject to CSRD also report under the EU Taxonomy (Article 8)."]
+      - [VSME Standard, "Suppliers under 1,000 employees can decline data requests beyond a voluntary SME standard."]
+      - [GRI Standards, "ESRS is designed to be interoperable with GRI."]
+
+  - id: nfrd
+    name: NFRD
+    folder: Europe
+    description: The Non-Financial Reporting Directive, predecessor to CSRD.
+    terms: [NFRD, Non-Financial Reporting Directive]
+    related:
+      - [CSRD and ESRS, "CSRD expanded on and replaced the NFRD."]
+
+  - id: eu-taxonomy
+    name: EU Taxonomy
+    folder: Europe
+    description: Classification system for environmentally sustainable economic activities.
+    terms: [EU Taxonomy, Taxonomy Regulation, Taxonomy]
+    related:
+      - [CSRD and ESRS, "Companies in CSRD scope report Taxonomy KPIs under Article 8."]
+      - [SFDR, "Financial market participants are brought into the Taxonomy through SFDR."]
+
+  - id: sfdr
+    name: SFDR
+    folder: Europe
+    description: Sustainability disclosure rules for EU asset managers and financial products.
+    terms: [SFDR, Sustainable Finance Disclosure Regulation, Article 8, Article 9]
+    related:
+      - [EU Taxonomy, "SFDR is how financial market participants come under the Taxonomy."]
+
+  - id: csddd
+    name: CSDDD
+    folder: Europe
+    description: EU due diligence duty on human rights and environmental impacts.
+    terms: [CSDDD, Corporate Sustainability Due Diligence Directive, due diligence]
+    related:
+      - [Omnibus I Directive, "The Omnibus narrowed CSDDD's liability and penalty provisions."]
+      - [CSRD and ESRS, "CSDDD is a conduct obligation, while CSRD is a disclosure obligation."]
+
+  - id: omnibus
+    name: Omnibus I Directive
+    folder: Europe
+    description: 2026 EU simplification package that narrowed CSRD and CSDDD.
+    terms: [Omnibus]
+    related:
+      - [CSRD and ESRS, "The Omnibus cut CSRD scope by roughly 80%."]
+      - [CSDDD, "The Omnibus narrowed CSDDD's liability and penalty provisions."]
+      - [VSME Standard, "The VSME is aligned with the Omnibus 'value chain cap' on data requests."]
+
+  - id: vsme
+    name: VSME Standard
+    folder: Europe
+    description: Voluntary sustainability reporting standard for non-listed SMEs.
+    terms: [VSME, Voluntary Sustainability Reporting Standard, SME standard, SMEs]
+    related:
+      - [CSRD and ESRS, "The VSME is a lighter alternative to the ESRS."]
+      - [Omnibus I Directive, "The VSME is aligned with the Omnibus value chain cap."]
+
+  # ---------------- United States ----------------
+  - id: california
+    name: California SB 253 and SB 261
+    folder: United States
+    description: California's emissions (SB 253) and climate risk (SB 261) reporting laws.
+    terms: [SB 253, SB 261, CARB, California Air Resources Board, California]
+    related:
+      - [GHG Protocol, "SB 253 emissions are measured under the GHG Protocol."]
+      - [TCFD, "SB 261 reports may follow TCFD, which served as its blueprint."]
+      - [ISSB Standards, "SB 261 reports may follow ISSB."]
+      - [SEC Climate Rule, "With the SEC rule stayed, California is the binding US regime."]
+      - [Scope 1 2 and 3 Emissions, "SB 253 phases in Scope 1 and 2 reporting, then Scope 3."]
+
+  - id: sec
+    name: SEC Climate Rule
+    folder: United States
+    description: The stayed 2024 federal climate disclosure rule.
+    terms: [SEC, SEC's 2024 climate rule, Securities and Exchange Commission]
+    related:
+      - [California SB 253 and SB 261, "With no federal mandate in force, California is the binding US regime."]
+
+  # ---------------- Other Jurisdictions ----------------
+  - id: australia
+    name: Australia AASB S2
+    folder: Other Jurisdictions
+    description: Mandatory Australian climate reporting based on IFRS S2.
+    terms: [AASB S2, AASB, Australia, Australian Sustainability Reporting Standards, ASIC]
+    related:
+      - [ISSB Standards, "AASB S2 is based on IFRS S2."]
+      - [Scope 1 2 and 3 Emissions, "AASB S2 phases in Scope 1 and 2, then Scope 3."]
+
+  - id: india
+    name: India BRSR
+    folder: Other Jurisdictions
+    description: India's mandatory ESG report for the top 1,000 listed companies.
+    terms: [BRSR, SEBI, India, Business Responsibility and Sustainability Report]
+    related:
+      - [Scope 1 2 and 3 Emissions, "BRSR Core includes GHG emissions among its assured attributes."]
+
+  # ---------------- Concepts ----------------
+  - id: double-materiality
+    name: Double Materiality
+    folder: Concepts
+    description: Financial materiality plus impact materiality, and which regimes use which.
+    terms: [double materiality, financial materiality, impact materiality, financially material]
+    related:
+      - [CSRD and ESRS, "CSRD is the main regime that requires double materiality."]
+      - [ISSB Standards, "ISSB applies a financial materiality lens."]
+      - [GRI Standards, "GRI is built on impact materiality."]
+      - [SASB Standards, "SASB focuses on financially material issues."]
+
+  - id: standards-vs-frameworks
+    name: Standards vs Frameworks
+    folder: Concepts
+    description: How prescriptive standards differ from broad frameworks, and how they combine.
+    terms: [ESG standards, ESG frameworks, frameworks and standards, standards and frameworks]
+    related:
+      - [TCFD, "TCFD is Novata's main example of a framework."]
+      - [GRI Standards, "GRI is one of Novata's examples of a standard."]
+      - [SASB Standards, "SASB is one of Novata's examples of a standard."]
+
+  - id: emissions-scopes
+    name: Scope 1 2 and 3 Emissions
+    folder: Concepts
+    description: The three emissions scopes and which regimes require each.
+    terms: [Scope 1, Scope 2, Scope 3, GHG emissions, greenhouse gas emissions]
+    related:
+      - [GHG Protocol, "The GHG Protocol is the accounting method for all three scopes."]
+      - [California SB 253 and SB 261, "SB 253 requires Scope 1 and 2 from 2026 and Scope 3 from 2027."]
+      - [ISSB Standards, "IFRS S1 and S2 require Scope 1, 2 and 3 emissions."]
+      - [Australia AASB S2, "AASB S2 requires Scope 1 and 2 from year one and Scope 3 from year two."]

@@ -1,0 +1,318 @@
+{
+  "mode": "ingest",
+  "execution": "local",
+  "network_at_run_time": "offline",
+  "timestamp": "2026-09-29 23:05:18 PDT",
+  "target": "vault/raw/Global_Sustainability_Reporting_Standards_Executive_Briefing.pdf",
+  "files": [
+    "Global_Sustainability_Reporting_Standards_Executive_Briefing.pdf"
+  ],
+  "force": true,
+  "model": {
+    "name": "gemma4:e2b-it-qat",
+    "digest": "07ea59a47401",
+    "size_gb": 4.34,
+    "family": "gemma4",
+    "parameter_size": "4.6B",
+    "quantization": "Q4_0",
+    "format": "gguf"
+  },
+  "embedding_model": {
+    "name": "embeddinggemma",
+    "digest": "85462619ee72",
+    "size_gb": 0.62,
+    "family": "gemma3",
+    "parameter_size": "307.58M",
+    "quantization": "BF16",
+    "format": "gguf"
+  },
+  "runtime": {
+    "runtime": "Ollama",
+    "version": "0.35.0",
+    "url": "http://127.0.0.1:11434"
+  },
+  "notes": [
+    {
+      "note": "wiki/Sources/ESG Frameworks Comparison.md",
+      "passages": [
+        "esg-frameworks-table:row01",
+        "esg-frameworks-table:row02",
+        "esg-frameworks-table:row03",
+        "esg-frameworks-table:row04",
+        "esg-frameworks-table:row05",
+        "esg-frameworks-table:row06",
+        "esg-frameworks-table:row07",
+        "esg-frameworks-table:row08",
+        "esg-frameworks-table:s01c1"
+      ],
+      "status": "not affected by this ingest"
+    },
+    {
+      "note": "wiki/Sources/Novata ESG Standards and Frameworks Guide.md",
+      "passages": [
+        "novata-esg-guide:s01c1",
+        "novata-esg-guide:s02c1",
+        "novata-esg-guide:s03c1",
+        "novata-esg-guide:s04c1",
+        "novata-esg-guide:s05c1",
+        "novata-esg-guide:s06c1",
+        "novata-esg-guide:s07c1",
+        "novata-esg-guide:s08c1",
+        "novata-esg-guide:s09c1",
+        "novata-esg-guide:s10c1",
+        "novata-esg-guide:s11c1",
+        "novata-esg-guide:s12c1",
+        "novata-esg-guide:s13c1",
+        "novata-esg-guide:s14c1"
+      ],
+      "status": "not affected by this ingest"
+    },
+    {
+      "note": "wiki/Sources/Global Sustainability Reporting Briefing.md",
+      "passages": [
+        "reporting-briefing:s01c1",
+        "reporting-briefing:s02c1",
+        "reporting-briefing:s03c1",
+        "reporting-briefing:s04c1",
+        "reporting-briefing:s05c1",
+        "reporting-briefing:s06c1",
+        "reporting-briefing:s07c1",
+        "reporting-briefing:s08c1",
+        "reporting-briefing:s09c1",
+        "reporting-briefing:s10c1",
+        "reporting-briefing:s11c1",
+        "reporting-briefing:s12c1",
+        "reporting-briefing:s13c1"
+      ],
+      "status": "reviewed: kept as is"
+    },
+    {
+      "note": "wiki/Frameworks and Standards/ISSB Standards.md",
+      "passages": [
+        "reporting-briefing:s02c1",
+        "esg-frameworks-table:row07",
+        "novata-esg-guide:s03c1"
+      ],
+      "status": "reviewed: kept as is"
+    },
+    {
+      "note": "wiki/Frameworks and Standards/GRI Standards.md",
+      "passages": [
+        "reporting-briefing:s03c1",
+        "novata-esg-guide:s06c1",
+        "esg-frameworks-table:row05"
+      ],
+      "status": "reviewed: kept as is"
+    },
+    {
+      "note": "wiki/Frameworks and Standards/SASB Standards.md",
+      "passages": [
+        "esg-frameworks-table:row01",
+        "novata-esg-guide:s04c1",
+        "esg-frameworks-table:row07",
+        "esg-frameworks-table:s01c1",
+        "novata-esg-guide:s01c1"
+      ],
+      "status": "not affected by this ingest"
+    },
+    {
+      "note": "wiki/Frameworks and Standards/TCFD.md",
+      "passages": [
+        "novata-esg-guide:s09c1",
+        "esg-frameworks-table:row04"
+      ],
+      "status": "not affected by this ingest"
+    },
+    {
+      "note": "wiki/Frameworks and Standards/CDP.md",
+      "passages": [
+        "novata-esg-guide:s10c1",
+        "esg-frameworks-table:row06",
+        "novata-esg-guide:s07c1"
+      ],
+      "status": "not affected by this ingest"
+    },
+    {
+      "note": "wiki/Frameworks and Standards/SBTi.md",
+      "passages": [
+        "esg-frameworks-table:row02",
+        "esg-frameworks-table:s01c1"
+      ],
+      "status": "not affected by this ingest"
+    },
+    {
+      "note": "wiki/Frameworks and Standards/GHG Protocol.md",
+      "passages": [
+        "reporting-briefing:s04c1"
+      ],
+      "status": "reviewed: kept as is"
+    },
+    {
+      "note": "wiki/Frameworks and Standards/UN Sustainable Development Goals.md",
+      "passages": [
+        "novata-esg-guide:s12c1",
+        "novata-esg-guide:s07c1"
+      ],
+      "status": "not affected by this ingest"
+    },
+    {
+      "note": "wiki/Frameworks and Standards/Private Markets ESG Frameworks.md",
+      "passages": [
+        "novata-esg-guide:s12c1",
+        "novata-esg-guide:s11c1"
+      ],
+      "status": "not affected by this ingest"
+    },
+    {
+      "note": "wiki/Europe/CSRD and ESRS.md",
+      "passages": [
+        "reporting-briefing:s06c1",
+        "esg-frameworks-table:row03"
+      ],
+      "status": "reviewed: kept as is"
+    },
+    {
+      "note": "wiki/Europe/NFRD.md",
+      "passages": [
+        "esg-frameworks-table:row08"
+      ],
+      "status": "not affected by this ingest"
+    },
+    {
+      "note": "wiki/Europe/EU Taxonomy.md",
+      "passages": [
+        "reporting-briefing:s07c1"
+      ],
+      "status": "reviewed: kept as is"
+    },
+    {
+      "note": "wiki/Europe/SFDR.md",
+      "passages": [
+        "reporting-briefing:s08c1",
+        "reporting-briefing:s07c1"
+      ],
+      "status": "reviewed: kept as is"
+    },
+    {
+      "note": "wiki/Europe/CSDDD.md",
+      "passages": [
+        "reporting-briefing:s09c1"
+      ],
+      "status": "reviewed: kept as is"
+    },
+    {
+      "note": "wiki/Europe/Omnibus I Directive.md",
+      "passages": [
+        "reporting-briefing:s05c1",
+        "novata-esg-guide:s05c1",
+        "reporting-briefing:s09c1"
+      ],
+      "status": "reviewed: kept as is"
+    },
+    {
+      "note": "wiki/Europe/VSME Standard.md",
+      "passages": [
+        "novata-esg-guide:s05c1"
+      ],
+      "status": "not affected by this ingest"
+    },
+    {
+      "note": "wiki/United States/California SB 253 and SB 261.md",
+      "passages": [
+        "reporting-briefing:s11c1"
+      ],
+      "status": "reviewed: kept as is"
+    },
+    {
+      "note": "wiki/United States/SEC Climate Rule.md",
+      "passages": [
+        "reporting-briefing:s10c1"
+      ],
+      "status": "updated",
+      "seconds": 19.6,
+      "review_flags": [],
+      "stats": {
+        "wall_seconds": 19.55,
+        "time_to_first_token_seconds": 12.82,
+        "load_seconds": 10.67,
+        "prompt_tokens": 374,
+        "prompt_eval_seconds": 1.38,
+        "output_tokens": 221,
+        "output_tokens_per_second": 32.3,
+        "done_reason": "stop"
+      }
+    },
+    {
+      "note": "wiki/Other Jurisdictions/Australia AASB S2.md",
+      "passages": [
+        "reporting-briefing:s12c1"
+      ],
+      "status": "reviewed: kept as is"
+    },
+    {
+      "note": "wiki/Other Jurisdictions/India BRSR.md",
+      "passages": [
+        "reporting-briefing:s13c1"
+      ],
+      "status": "reviewed: kept as is"
+    },
+    {
+      "note": "wiki/Concepts/Double Materiality.md",
+      "passages": [
+        "esg-frameworks-table:s01c1",
+        "esg-frameworks-table:row03",
+        "reporting-briefing:s06c1",
+        "esg-frameworks-table:row01",
+        "esg-frameworks-table:row05",
+        "esg-frameworks-table:row07",
+        "novata-esg-guide:s04c1",
+        "novata-esg-guide:s06c1"
+      ],
+      "status": "reviewed: kept as is"
+    },
+    {
+      "note": "wiki/Concepts/Standards vs Frameworks.md",
+      "passages": [
+        "novata-esg-guide:s14c1",
+        "novata-esg-guide:s13c1",
+        "novata-esg-guide:s07c1",
+        "novata-esg-guide:s01c1",
+        "novata-esg-guide:s02c1",
+        "novata-esg-guide:s08c1"
+      ],
+      "status": "not affected by this ingest"
+    },
+    {
+      "note": "wiki/Concepts/Scope 1 2 and 3 Emissions.md",
+      "passages": [
+        "reporting-briefing:s11c1",
+        "reporting-briefing:s04c1",
+        "reporting-briefing:s12c1",
+        "esg-frameworks-table:row02",
+        "novata-esg-guide:s10c1",
+        "novata-esg-guide:s12c1",
+        "reporting-briefing:s02c1",
+        "reporting-briefing:s13c1"
+      ],
+      "status": "reviewed: kept as is"
+    }
+  ],
+  "unmanaged_notes": [],
+  "index": {
+    "source_passages": 36,
+    "note_sections": 55,
+    "embeddings": "embeddinggemma (0 new, 91 reused)"
+  },
+  "total_seconds": 20.2,
+  "memory": {
+    "ollama_loaded_models": [
+      {
+        "model": "gemma4:e2b-it-qat",
+        "loaded_size_gb": 1.66,
+        "in_gpu_memory_gb": 1.66,
+        "context_length": 8192
+      }
+    ],
+    "harness_peak_rss_mb": 66.6
+  }
+}
